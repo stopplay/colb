@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>colb.global</title>
+	<meta name="author" content="Mattia Conconi" />
+	<meta name="description" content="" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<link rel="shortcut icon" href="graphics/ico/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="graphics/ico/apple-touch-icon-114x114-precomposed.png">
+	<link rel="icon" href="graphics/ico/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullPage.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			$(".logo").css("opacity", 1 - $(window).scrollTop() / 80);
+		  });
+
+
+		$(window).scroll(function(){
+			$(".doors").css("opacity", 1 - $(window).scrollTop() / 600);
+		  });
+
+		$(window).scroll(function(){
+			$(".code").css("opacity", 1 - $(window).scrollTop() / 800);
+		  });
+
+	</script>
+
+	</script>
+</head>
+
+<body>
+	<div class="menu">
+	  <iframe src="menu.html"></iframe>
+	</div>
+	<div class="nav-icon">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="content three">
+			<div class="bodycopy">
+				<h1>Blockchain</h1>
+			We believe that it is the responsibility of modern society to guarantee the greatest number of people abundance and comfort. Blockchain emerges as a positive alternative in an era of income concentration, the debate over the merits of growth, and the need for new methods to transform the monopolistic hold on global wealth. 
+
+			Blockchain has the power to offer innovative mechanisms to a greater number of participants. With blockchain, users can rely on a safe and transparent network which better addresses the problem of fallible intermediaries. Within the blockchain, individuals can exercise control over their own money and track every transaction with the confidence that each is validated algorithmically. 
+
+			The blockchain's utility has the potential to extend beyond the realm of finance. It can ensure greater confidence in the production chain. The process of commodities and assets tokenization* will 
+			<ul>
+				<li>improve food source certification </li>
+				<li>streamline distribution networks </li>
+				<li>add leverage to the possibilities of investment<br> and fractional ownership </li>
+			</ul>
+
+			*The World Economic Forum estimates that by 2030 tokenization of assets may represent 10% of world GDP. 
+
+			For more information about tokenization, see Section 3, Colb’s Blockchain Landscape
+			</div>
+		</div>
+		<div class="logo black">
+			<div class="popouse">
+				<div  class="bodycopy white">
+					&quot;It is not the strongest of the species that survives,<br> 
+					nor the most intelligent that survives.<br> 
+					It is the one that is most adaptable to change.&quot;<br> 
+					<span class="autor">Darwin <span>
+				<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+		var fadeStart=80 // 300px scroll or less will equiv to 1 opacity
+		,fadeUntil=160 // 380px scroll or more will equiv to 0 opacity
+		,fading = $('#fading')
+	;
+
+	$(window).bind('scroll', function(){
+		var offset = $(document).scrollTop()
+			,opacity=1
+		;
+		if( offset<=fadeStart ){
+			opacity=0;
+		}else if( offset<=fadeUntil ){
+			opacity=0-offset/fadeUntil;
+		}
+		fading.css('opacity',opacity);
+	});
+</script>
+<script type="text/javascript">
+$('.search').hide();
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 400 && $(this).scrollTop() < 3000) {
+    $('.search').fadeIn();
+  } else {
+    $('.search').fadeOut();
+  }
+});  
+</script>
+<script>
+$(document).ready(function() {
+    $('.nav-icon').click(function() {
+        $(this).toggleClass('open');
+		$('body').toggleClass('show-menu');
+    });
+});
+</script>
+</html>

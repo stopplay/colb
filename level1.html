@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>colb.global</title>
+	<meta name="author" content="Mattia Conconi" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="shortcut icon" href="graphics/ico/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="graphics/ico/apple-touch-icon-114x114-precomposed.png">
+	<link rel="icon" href="graphics/ico/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css2/style.css" />
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Noto+Sans+JP:100&display=swap');
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullPage.js"></script>
+</head>
+
+<body>
+	<div class="menu">
+		<iframe src="menu.html"></iframe>
+	</div>
+	<div class="nav-icon">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="logo black" id="primo">
+			<div class="popouse">
+				Blockchain technology and cryptocurrencies</br>
+				will revolutionize the world economy.
+			</div>
+		</div>
+		<div class="content three">
+			<div class="bodycopy">
+				<h1>Welcome to Colb</h1>
+				We are blockchain experts with a solid foundation in law.
+				Our clients include existing ventures, start-ups, established companies, institutions, and fintechs.
+				Colb’s specialists understand the complex blockchain environment for the global arena and employ a
+				young, compelling technology to build strategic solutions. This is accomplished by combining onboard
+				knowledge of regulatory, financial, marketing/communication and IT disciplines.
+				Each client is unique, thus every solution is individually crafted, custom-tailored, and
+				made-to-measure. Colb clients gain access to exceptional resources, team wisdom, partnerships, a network
+				of professionals and sources of funding.
+				In close collaboration with our clients and partners, we set-up global businesses designed for impact
+				and to perform at the highest levels. We aim to build long-term relationships that yield sustainable and
+				scalable results.
+				Efficient problem-solving is the primary goal.
+				By providing knowledge and counsel with commitment and passion, Colb responsibly supports its clients
+				along their entrepreneurial journey.
+			</div>
+		</div>
+		<video autoplay muted loop id="myVideo">
+			<source src="video/video.mp4" type="video/mp4">
+		</video>
+		<div class="doors" id="verticals">
+			<img class="logo2" src="img/Colb_Logo_White.png" width="170px" />
+			<li>Blockchain Experts </li>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(window).scroll(function () {
+		$(".logo").css("opacity", 1 - $(window).scrollTop() / 100);
+	});
+</script>
+
+
+<script type="text/javascript">
+	$('video').hide();
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100 && $(this).scrollTop() < 300) {
+			$('video').fadeIn();
+		} else {
+			$('video').fadeOut();
+		}
+	});  
+</script>
+<script type="text/javascript">
+	$('#verticals').hide();
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 150 && $(this).scrollTop() < 350) {
+			$('#verticals').fadeIn();
+		} else {
+			$('#verticals').fadeOut();
+		}
+	});  
+</script>
+<script type="text/javascript">
+	$('.search').hide();
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 400 && $(this).scrollTop() < 3000) {
+			$('.search').fadeIn();
+		} else {
+			$('.search').fadeOut();
+		}
+	});  
+</script>
+<script>
+	$(document).ready(function () {
+		$('.nav-icon').click(function () {
+			$(this).toggleClass('open');
+			$('body').toggleClass('show-menu');
+		});
+	});
+</script>
+
+</html>

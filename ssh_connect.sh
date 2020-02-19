@@ -1,0 +1,1 @@
+ssh -i "Colb.pem" ubuntu@ec2-54-173-183-103.compute-1.amazonaws.com
