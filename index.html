@@ -89,11 +89,6 @@
 
         <div class="content three" id="content-block-6">
             <div class="bodycopy">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
                 <h1>Blockchain</h1>
                 We believe that it is the responsibility of modern society to guarantee the greatest number of people
                 abundance and comfort. Blockchain emerges as a positive alternative in an era of income concentration,
@@ -116,6 +111,31 @@
                 *The World Economic Forum estimates that by 2030 tokenization of assets may represent 10% of world GDP.
 
                 For more information about tokenization, see Section 3, Colb’s Blockchain Landscape
+                </br>
+                </br>
+                </br>
+                </br>
+            </div>
+        </div>
+
+        <!-- PAGE 3 start -->
+		<div class="logo black" id="content-block-7">
+			<div class="popouse">
+				<div class="bodycopy white"><br><br>
+					&quot;Colb has given us the critical tools necessary to support our business model, strategies which
+					help us to uphold our mission. It enables Conta Black to offer a more equal and inclusive financial
+					market for everyone, especially those left out of the system: <i>the unbankings</i>.&quot; <span
+						class="autor">Sergio All / CEO, Founder <span>
+							<img class="contablack" src="img/contablack2.svg" />
+				</div>
+			</div>
+        </div>
+        
+        <div class="doors2" id="content-block-8">
+            <div class="popouse">
+                We conceptualize, plan and create tailor-made solutions.<br> 
+                Each stage in every project is informed by Colb’s proprietary<br> 
+                4 Pillars methodology.
             </div>
         </div>
 
@@ -128,7 +148,7 @@
     }
 
     $(window).ready(function() {
-        for (var contentBlockNumber = 2; contentBlockNumber <= 6; contentBlockNumber++) {
+        for (var contentBlockNumber = 2; contentBlockNumber <= 10; contentBlockNumber++) {
             const contentBlockId = '#content-block-'.concat(''+contentBlockNumber);
             console.log('contentBlockId', contentBlockId);
             // $(contentBlockId).hide();
@@ -166,7 +186,9 @@
             opacityFromTopDistance("#content-block-3", scrollTop, 100, 400, 0.4, 0.8);
             opacityFromTopDistance("#content-block-4", scrollTop, 400, 1200, 0.2, 1);
             opacityFromTopDistance("#content-block-5", scrollTop, 1080, 1800, 0.2, 0.8);
-            opacityFromTopDistance("#content-block-6", scrollTop, 1150, 2800, 0.2, 1);
+            opacityFromTopDistance("#content-block-6", scrollTop, 1150, 2615, 0.2, 1);
+            opacityFromTopDistance("#content-block-7", scrollTop, 2500, 2800, 0.3, 0.7);
+            opacityFromTopDistance("#content-block-8", scrollTop, 2600, 2800, 0.2, 0.7);
 
             console.log('scrollTop', scrollTop);
         });

@@ -352,6 +352,7 @@ video  {
     height: 100%;
     width: 100%;
 	background: white;
+	color: rgb(20, 20, 20);
 }
 .doors .popouse {
 	color: white;
@@ -397,7 +398,11 @@ li:hover + img {
 }
 
 .content img {
-	cursor: pointer;
+	cursor: pointer;.contablack {
+		width: auto;
+		height: 0.65em;
+		margin-top: -6em;
+	}
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -451,6 +456,12 @@ li:hover + img {
 	margin-left: 0;
 }
 
+.contablack {
+	width: auto;
+	height: 0.65em;
+	margin-top: -6em;
+}
+
 /* Use a media query to add a breakpoint at 800px: 
 =============================================*/
 @media screen and (max-width: 2000px) {
@@ -475,5 +486,6 @@ margin-left: 0;
 
 @keyframes fadelogo {
     0%   {opacity: 0}
-    100% {opacity: 100} }
-class="due"
+	100% {opacity: 100} 
+}
+
