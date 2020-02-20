@@ -19,13 +19,6 @@ body {
 	line-height: 120%;
   	}
 
-.bodycopy {
-	color: rgb(20, 20, 20);
-	max-width: 800px;
-	padding: 10px;
-	margin: auto;
-	min-height: 100%;
-}
 
 .contacts {
 	color: rgb(20, 20, 20);
@@ -130,6 +123,39 @@ li{
 
 .fixed_headers div {
 	position: fixed; 
+}
+
+.table_header_container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.table_header_item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 25%;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
 }
 
 table {
@@ -498,10 +524,10 @@ li:hover + img {
 .content {
 	z-index: -2;
 	line-height: 120%;
-	position: absolute;
+	position: fixed;
 	padding-bottom: 400px;
-	top: 100%;
 	width: 100%;
+	overflow-y: auto;
 }
 
 .content img {
