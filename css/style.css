@@ -80,18 +80,20 @@ li{
 }
 
 .bio {
-	display: inline-grid;
+	display: flex;
+	flex-direction: column;
 	overflow: inherit;
 	width: 350px;
 	padding: 10px;
 	margin-bottom: 1em;
-	/* float: left; */
+	float: left;
+
 }
 
 .bio p {
 	font-size: 0.75em;
 	line-height: 110%;
-	width: 350px;
+	width: unset !important;
 }
 
 .bio h3 {
@@ -615,8 +617,9 @@ body {
 	}
 	
 .bio p {
-	width: auto;
+	width: unset !important;
 	padding: 0 10px 10px 10px;
+
 	}
 	
 .bio h3 {
@@ -638,4 +641,3 @@ body {
 @keyframes fadelogo {
     0%   {opacity: 0}
     100% {opacity: 100} }
-class="due"

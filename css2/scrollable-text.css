@@ -2,11 +2,11 @@
     /* overflow-y: auto; */
 }
 
-.content::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+/* .content::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
 }
-/* Optional: show position indicator in red */
+
 .content::-webkit-scrollbar-thumb {
     background: #FF0000;
-}
+} */
