@@ -159,18 +159,32 @@
 
         
     
-        function opacityFromTopDistance(element, current, start, end, threshold1, threshold2) {
-            // const calculatedOpacity = clamp((current - start)/(end - start), 0, 1);
+        function opacityFromTopDistance(element, current, maxScroll, start, end, threshold1, threshold2) {
+            var currentPercentage = current/maxScroll;
+
+            // console.log('maxScroll', maxScroll);
+            // console.log('current percentage', currentPercentage)
+            var baseMaxScroll = 2762; // change here to the final
+            var percentualDeviation = maxScroll / baseMaxScroll;
+
+            // console.log('percentualDeviation', percentualDeviation);
+
+            start = percentualDeviation * start;
+            end = percentualDeviation * end;
+
+            // var start = startPercentage * maxScroll;
+            // var end = endPercentage * maxScroll;
+
             threshold2 = threshold2 || threshold1;
-            const endEaseIn = start + (end - start) * threshold1;
-            const startEaseOut = start + (end - start) * threshold2;
+            var endEaseIn = start + (end - start) * threshold1;
+            var startEaseOut = start + (end - start) * threshold2;
             
             
             if (current >= start && current < endEaseIn) {
-                const calculatedOpacity = (current - start)/(endEaseIn - start);
+                var calculatedOpacity = (current - start)/(endEaseIn - start);
                 $(element).css("opacity", calculatedOpacity);
             } else if (current >= startEaseOut && current <= end) {
-                const calculatedOpacity = (current - startEaseOut)/(end - startEaseOut);
+                var calculatedOpacity = (current - startEaseOut)/(end - startEaseOut);
                 $(element).css("opacity", 1 - calculatedOpacity);
             } else if (current >= endEaseIn && current < startEaseOut) {
                 $(element).css("opacity", 1);
@@ -178,17 +192,21 @@
                 $(element).css("opacity", 0);
             }
         }
+
+        
     
         $(window).scroll(function () {
-            const scrollTop = $(this).scrollTop();
-            opacityFromTopDistance("#content-block-1", scrollTop, 0, 100, 0);
-            opacityFromTopDistance("#content-block-2", scrollTop, 70, 400, 0.2, 0.85);
-            opacityFromTopDistance("#content-block-3", scrollTop, 100, 400, 0.4, 0.8);
-            opacityFromTopDistance("#content-block-4", scrollTop, 400, 1200, 0.2, 1);
-            opacityFromTopDistance("#content-block-5", scrollTop, 1080, 1800, 0.2, 0.8);
-            opacityFromTopDistance("#content-block-6", scrollTop, 1150, 2615, 0.2, 1);
-            opacityFromTopDistance("#content-block-7", scrollTop, 2500, 2800, 0.3, 0.7);
-            opacityFromTopDistance("#content-block-8", scrollTop, 2600, 2800, 0.2, 0.7);
+            var scrollTop = $(this).scrollTop();
+            var scrollBottom = $(document).height() - $(window).height();
+
+            opacityFromTopDistance("#content-block-1", scrollTop, scrollBottom, 0, 100, 0);
+            opacityFromTopDistance("#content-block-2", scrollTop, scrollBottom, 70, 400, 0.2, 0.85);
+            opacityFromTopDistance("#content-block-3", scrollTop, scrollBottom, 100, 400, 0.4, 0.8);
+            opacityFromTopDistance("#content-block-4", scrollTop, scrollBottom, 400, 1200, 0.2, 1);
+            opacityFromTopDistance("#content-block-5", scrollTop, scrollBottom, 1080, 1800, 0.2, 0.8);
+            opacityFromTopDistance("#content-block-6", scrollTop, scrollBottom, 1150, 2615, 0.2, 1);
+            opacityFromTopDistance("#content-block-7", scrollTop, scrollBottom, 2500, 2750, 0.3, 0.7);
+            opacityFromTopDistance("#content-block-8", scrollTop, scrollBottom, 2700, 2800, 0.2, 0.9);
 
             console.log('scrollTop', scrollTop);
         });
