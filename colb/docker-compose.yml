@@ -1,0 +1,28 @@
+version: "3"
+
+networks:
+  cluster:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.2.9.0/24
+
+services:
+
+  colb-web:
+    container_name: colb-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app/
+    command: sh /usr/src/app/run_migrations.sh
+    ports:
+      - 80:8000
+    networks:
+      cluster:
+        ipv4_address: 10.2.9.10
+
+volumes:
+  db-data:
+    driver: local
