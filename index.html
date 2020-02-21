@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css2/style.css" />
 	<link rel="stylesheet" type="text/css" href="css2/responsive-table.css" />
 	<link rel="stylesheet" type="text/css" href="css2/scrollable-text.css" />
+	<link rel="stylesheet" type="text/css" href="css/pageable.min.css" />
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Noto+Sans+JP:100&display=swap');
@@ -29,36 +30,40 @@
 </head>
 
 <body>
-	<div class="menu">
+	<!-- <div class="menu">
 		<iframe src="menu.html"></iframe>
 	</div>
 	<div class="nav-icon">
 		<span></span>
 		<span></span>
-	</div>
-	<div id="main-container" class="container" style="height: 7000px;">
+	</div> -->
+	<div id="main-container" class="container" >
+
+		<section class="scene-viewer">
+
+		</section>
 
 		<!-- PAGE 1 start -->
-		<div class="logo black content-page" id="content-block-1">
+		<section class="logo black content-page" data-anchor="page 1" id="content-block-1">
 			<div class="popouse">
 				Blockchain technology and cryptocurrencies<br>
 				will revolutionize the world economy.
 			</div>
-		</div>
+		</section>
 
-		<div id="content-block-2" class="content-page">
-			<video class="content-page" autoplay muted loop>
+		<section data-anchor="page 2" id="content-block-2" class="logo black content-page">
+			<video autoplay muted loop>
 				<source src="video/video.mp4" type="video/mp4">
 			</video>
 
-			<div class="doors">
+			<div class="center-on-parent">
 				<img class="logo2" src="img/Colb_Logo_White.png" width="170" alt="logo" />
 				<span>Blockchain Experts </span>
 			</div>
-		</div>
+		</section>
 
 
-		<div class="content three content-page" id="content-block-4">
+		<section class="content three content-page" data-anchor="page 3" id="content-block-3">
 			<div class="bodycopy">
 				<h1>Welcome to Colb</h1>
 
@@ -83,12 +88,12 @@
 					along their entrepreneurial journey.
 				</div>
 			</div>
-		</div>
+		</section>
 
 
 		<!-- PAGE 2 start -->
 
-		<div class="logo black content-page" id="content-block-5">
+		<section class="logo black content-page" data-anchor="page 4" id="content-block-4">
 			<div class="popouse">
 				<div class="bodycopy white">
 					&quot;It is not the strongest of the species that survives,<br>
@@ -98,9 +103,9 @@
 					<br><br>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="content three content-page" id="content-block-6">
+		<section class="content three content-page" data-anchor="page 5" id="content-block-5">
 			<div class="bodycopy">
 				<h1>Blockchain</h1>
 				<div class="scrollable-text">
@@ -137,10 +142,10 @@
 				<br>
 				<br>
 			</div>
-		</div>
+		</section>
 
 		<!-- PAGE 3 start -->
-		<div class="logo black content-page" id="content-block-7">
+		<section class="logo black content-page" data-anchor="page 6" id="content-block-6">
 			<div class="popouse">
 				<div class="bodycopy white"><br><br>
 					&quot;Colb has given us the critical tools necessary to support our business model, strategies which
@@ -150,17 +155,17 @@
 					<img class="contablack" src="img/contablack2.svg" alt="contablack" />
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="doors2 content-page" id="content-block-8">
+		<section class="doors2 content-page" data-anchor="page 7" id="content-block-7">
 			<div class="popouse">
 				We conceptualize, plan and create tailor-made solutions.<br>
 				Each stage in every project is informed by Colb’s proprietary<br>
 				4 Pillars methodology.
 			</div>
-		</div>
+		</section>
 
-		<div class="content three content-page" id="content-block-9">
+		<section class="content three content-page" data-anchor="page 8" id="content-block-8">
 
 			<!-- <div class="architecture">
 				<div class="centered-text">Stage 1, <i>Venture Rising</i></div>
@@ -273,21 +278,17 @@
 					</tbody>
 				</table>
 			</div>
-		</div>
+		</section>
 
 
 		<!-- PAGE 4 start -->
-		<div class="logo black content-page" id="content-block-10">
-			<div class="popouse2">
-				<div class="bodycopy white">
-					<video autoplay muted loop>
-						<source src="video/video9.mp4" type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</div>
+		<section class="logo black content-page" data-anchor="page 9" id="content-block-9">
+			<video autoplay muted loop>
+				<source src="video/video9.mp4" type="video/mp4">
+			</video>
+		</section>
 
-		<div class="content three content-page" id="content-block-11">
+		<section class="content three content-page" data-anchor="page 10" id="content-block-10">
 			<div class="bodycopy">
 				<div class="scrollable-text">
 					<h1>Colb’s view on the market</h1>
@@ -314,10 +315,10 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- PAGE 5 start -->
-		<div class="logo black content-page" id="content-block-12">
+		<section class="logo black content-page" data-anchor="page 11" id="content-block-11">
 			<div class="popouse">
 				<div class="bodycopy white"><br>
 					&quot;The Colb team has unique expertise not usually encountered in the market nowadays the
@@ -329,9 +330,9 @@
 					<img class="monnos" src="img/monnos-1.svg" alt="monnos" />
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="content three content-page" id="content-block-13">
+		<section class="content three content-page" data-anchor="page 12" id="content-block-12">
 			<div class="bodycopy">
 				<h1>People</h1>
 				<div class="box scrollable-text">
@@ -432,20 +433,16 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- PAGE 6 start -->
-		<div class="logo black content-page" id="content-block-14">
-			<div class="popouse2">
-				<div class="bodycopy white">
-					<video autoplay muted loop>
-						<source src="video/video8.mp4" type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</div>
+		<section class="logo black content-page" data-anchor="page 13" id="content-block-13">
+			<video autoplay muted loop>
+				<source src="video/video8.mp4" type="video/mp4">
+			</video>
+		</section>
 
-		<div class="content three content-page" id="content-block-15">
+		<section class="content three content-page" data-anchor="page 14" id="content-block-14">
 			<div class="contacts">
 				<ul>
 					<li>Colb—</li>
@@ -460,7 +457,7 @@
 					<li>hi@colb.global</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 
 
 	</div>
@@ -468,147 +465,216 @@
 
 <script type="text/javascript">
 
-	$.fn.scrollGuard = function () {
-		return this
-			.on('wheel', function (e) {
-				var $this = $(this);
-				// console.log('e', e);
-				// console.log('$this.scrollTop()', $this.scrollTop());
-				// console.log('$this.innerHeight()', $this.innerHeight());
-				// console.log('$this[0].scrollHeight', $this[0].scrollHeight);
-				// console.log('$this.parent().scrollTop()', $this.parent().scrollTop());
-				// console.log('$(window).scrollTop()', $(window).scrollTop());
+	$(window).ready(function() {
+		// var page = new Pageable("#main-container", {
+		// 	freeScroll: true,
+		// 	animation: 600,
+		// 	swipeThreshold: 10, // swipe / mouse drag distance (px) before firing the page change event
 
-				if (e.originalEvent.deltaY < 0) {
-					/* scrolling up */
-					return ($this.scrollTop() > 0) || ($this.scrollTop() === 0 && $(window).scrollTop() > 0 && $(window).scrollTop() > $(window).height());
-				} else {
-					/* scrolling down */
-					return ($this.scrollTop() + $this.innerHeight() < $this[0].scrollHeight) || (($this.scrollTop() + 1 + $this.innerHeight()) >= $this[0].scrollHeight);
+		// 	onStart: function() {
+		// 		console.log('onStart', arguments)
+		// 		// do something when scrolling begins
+		// 	},
+		// 	onScroll: function() {
+		// 		console.log('onScroll', arguments)
+		// 		// do something during scroll
+		// 	},
+		// 	onFinish: function() {
+		// 		console.log('onFinish', arguments)
+		// 		// do something when scrolling ends
+		// 	},
+		// });
+		console.log($('.content-page').length);
+		$('.scene-viewer').html($('.content-page').first().clone());
+
+		var lastIdSet = '';
+		$(window).scroll(function() {
+			var contentPageScroll = $(this).scrollTop();
+			// console.log('contentPageScroll', contentPageScroll);
+			var hadScrolled = false;
+			$('.content-page').each(function(index, contentPage) {
+				var pageOffset = $(contentPage).offset();
+				var pageHeight = $(contentPage).height();
+				var totalHeight = pageHeight + pageOffset.top;
+
+				if (contentPageScroll >= pageOffset.top && contentPageScroll <= (pageOffset.top + pageHeight) ) {
+					console.log('pageOffset', pageOffset);
+					console.log('pageHeight', pageHeight);
+					var percentageOfScrollOnPage = (contentPageScroll - pageOffset.top) / (totalHeight - pageOffset.top);
+					// $(contentPage).css('position', 'fixed');
+					var currentPageId = $(contentPage).attr('id');
+					console.log('page', currentPageId, ':', percentageOfScrollOnPage);
+
+					if (lastIdSet !== currentPageId) {
+						$('.scene-viewer').html($(contentPage).clone());
+						lastIdSet = currentPageId;
+					}
+
+					// has scroll?
+					var hasScroll = $(contentPage).height() > $(window).height();
+
+					console.log('hasScroll', hasScroll);
+
+					if (hasScroll) {
+						var scrollInPixels = Math.ceil($(contentPage).height() * percentageOfScrollOnPage);
+						console.log('scrollInPixels', scrollInPixels);
+						$('.scene-viewer').scrollTop(scrollInPixels);
+					}
+
+					if (contentPageScroll + $(window).height() >= pageOffset.top && !hadScrolled) {
+						
+
+						// console.log('scrollTo', totalHeight);
+						// $([document.documentElement, document.body]).animate({
+						// 	scrollTop: totalHeight
+						// }, 1000);
+					}
 				}
 			});
-	};
-
-
-	function clamp(current, min, max) {
-		return Math.max(min, Math.min(current, max));
-	}
-
-	$(window).ready(function () {
-		// console.log('length', $('.content-page').length);
-		$('.content-page').scrollGuard();
-
-		var baseScrollHeight = 100;
-		var numberOfPages = $('.content-page').length;
-
-		$("#main-container").height(numberOfPages * baseScrollHeight);
-
-
-		for (var contentBlockNumber = 2; contentBlockNumber <= numberOfPages; contentBlockNumber++) {
-			const contentBlockId = '#content-block-'.concat('' + contentBlockNumber);
-			console.log('contentBlockId', contentBlockId);
-			// $(contentBlockId).hide();
-			$(contentBlockId).css("opacity", 0);
-		}
-
-		$('.search').hide();
-
-		function opacityFromTopDistance(element, current, maxScroll, start, end, threshold1, threshold2) {
-			var currentPercentage = current / maxScroll;
-
-			// console.log('maxScroll', maxScroll);
-			// console.log('current percentage', currentPercentage)
-			var baseMaxScroll = 2762; // change here to the final
-			var percentualDeviation = maxScroll / baseMaxScroll;
-
-			// console.log('percentualDeviation', percentualDeviation);
-
-			// start = percentualDeviation * start;
-			// end = percentualDeviation * end;
-
-			// var start = startPercentage * maxScroll;
-			// var end = endPercentage * maxScroll;
-
-			threshold2 = threshold2 || threshold1;
-			var endEaseIn = start + (end - start) * threshold1;
-			var startEaseOut = start + (end - start) * threshold2;
-
-			var calculatedOpacity = 0;
-			var shouldSetZIndex = false;
-
-			if (current >= start && current < endEaseIn) {
-				calculatedOpacity = (current - start) / (endEaseIn - start);
-				shouldSetZIndex = true;
-			} else if (current >= startEaseOut && current <= end) {
-				calculatedOpacity = 1 - (current - startEaseOut) / (end - startEaseOut);
-				shouldSetZIndex = true;
-			} else if (current >= endEaseIn && current < startEaseOut) {
-				calculatedOpacity = 1;
-				shouldSetZIndex = true;
-			} else {
-				calculatedOpacity = 0;
-				shouldSetZIndex = false;
-			}
-
-			if (current >= start && current <= end) {
-				console.log('current:', element);
-				console.log('opacity:', calculatedOpacity);
-			}
-
-			if (shouldSetZIndex) {
-				$(element).css("z-index", 100);
-			} else {
-				$(element).css("z-index", 1);
-			}
-
-			$(element).css("opacity", calculatedOpacity);
-		}
-
-
-
-		$(window).scroll(function () {
-			var scrollTop = $(this).scrollTop();
-			var scrollBottom = $(document).height() - $(window).height();
-
-			for (var page = 1; page <= numberOfPages; page++) {
-				var pageId = "#content-block-" + page;
-				// console.log('pageId', pageId)
-				opacityFromTopDistance(pageId, scrollTop, scrollBottom, (page - 1) * baseScrollHeight, page * baseScrollHeight, 0.1, 0.9);
-			}
-
-			var elementsThatShouldAppearImmediatly = [
-				{ name: '#content-block-1', 	index: 1	},
-				{ name: '#content-block-4', 	index: 4	},
-				{ name: '#content-block-6', 	index: 6	},
-				{ name: '#content-block-9', 	index: 9	},
-				{ name: '#content-block-11', 	index: 11	},
-				{ name: '#content-block-13', 	index: 13	},
-			];
-
-			for (var element in elementsThatShouldAppearImmediatly) {
-				opacityFromTopDistance(
-					element.name, 
-					scrollTop, 
-					scrollBottom, 
-					(element.index - 1) * baseScrollHeight, 
-					element.index * baseScrollHeight, 
-					0, 
-					0.85
-				);
-			}
-
-			opacityFromTopDistance(
-				'#content-block-1', 
-					scrollTop, 
-					scrollBottom, 
-					0, 
-					baseScrollHeight, 
-					0, 
-					0.85
-			);
 		});
+	})
 
-	});
+	// $.fn.scrollGuard = function () {
+	// 	return this
+	// 		.on('wheel', function (e) {
+	// 			var $this = $(this);
+	// 			// console.log('e', e);
+	// 			// console.log('$this.scrollTop()', $this.scrollTop());
+	// 			// console.log('$this.innerHeight()', $this.innerHeight());
+	// 			// console.log('$this[0].scrollHeight', $this[0].scrollHeight);
+	// 			// console.log('$this.parent().scrollTop()', $this.parent().scrollTop());
+	// 			// console.log('$(window).scrollTop()', $(window).scrollTop());
+
+	// 			if (e.originalEvent.deltaY < 0) {
+	// 				/* scrolling up */
+	// 				return ($this.scrollTop() > 0) || ($this.scrollTop() === 0 && $(window).scrollTop() > 0 && $(window).scrollTop() > $(window).height());
+	// 			} else {
+	// 				/* scrolling down */
+	// 				return ($this.scrollTop() + $this.innerHeight() < $this[0].scrollHeight) || (($this.scrollTop() + 1 + $this.innerHeight()) >= $this[0].scrollHeight);
+	// 			}
+	// 		});
+	// };
+
+
+	// function clamp(current, min, max) {
+	// 	return Math.max(min, Math.min(current, max));
+	// }
+
+	// $(window).ready(function () {
+	// 	// console.log('length', $('.content-page').length);
+	// 	$('.content-page').scrollGuard();
+
+	// 	var baseScrollHeight = 100;
+	// 	var numberOfPages = $('.content-page').length;
+
+	// 	$("#main-container").height(numberOfPages * baseScrollHeight);
+
+
+	// 	for (var contentBlockNumber = 2; contentBlockNumber <= numberOfPages; contentBlockNumber++) {
+	// 		const contentBlockId = '#content-block-'.concat('' + contentBlockNumber);
+	// 		console.log('contentBlockId', contentBlockId);
+	// 		// $(contentBlockId).hide();
+	// 		$(contentBlockId).css("opacity", 0);
+	// 	}
+
+	// 	$('.search').hide();
+
+	// 	function opacityFromTopDistance(element, current, maxScroll, start, end, threshold1, threshold2) {
+	// 		var currentPercentage = current / maxScroll;
+
+	// 		// console.log('maxScroll', maxScroll);
+	// 		// console.log('current percentage', currentPercentage)
+	// 		var baseMaxScroll = 2762; // change here to the final
+	// 		var percentualDeviation = maxScroll / baseMaxScroll;
+
+	// 		// console.log('percentualDeviation', percentualDeviation);
+
+	// 		// start = percentualDeviation * start;
+	// 		// end = percentualDeviation * end;
+
+	// 		// var start = startPercentage * maxScroll;
+	// 		// var end = endPercentage * maxScroll;
+
+	// 		threshold2 = threshold2 || threshold1;
+	// 		var endEaseIn = start + (end - start) * threshold1;
+	// 		var startEaseOut = start + (end - start) * threshold2;
+
+	// 		var calculatedOpacity = 0;
+	// 		var shouldSetZIndex = false;
+
+	// 		if (current >= start && current < endEaseIn) {
+	// 			calculatedOpacity = (current - start) / (endEaseIn - start);
+	// 			shouldSetZIndex = true;
+	// 		} else if (current >= startEaseOut && current <= end) {
+	// 			calculatedOpacity = 1 - (current - startEaseOut) / (end - startEaseOut);
+	// 			shouldSetZIndex = true;
+	// 		} else if (current >= endEaseIn && current < startEaseOut) {
+	// 			calculatedOpacity = 1;
+	// 			shouldSetZIndex = true;
+	// 		} else {
+	// 			calculatedOpacity = 0;
+	// 			shouldSetZIndex = false;
+	// 		}
+
+	// 		if (current >= start && current <= end) {
+	// 			console.log('current:', element);
+	// 			console.log('opacity:', calculatedOpacity);
+	// 		}
+
+	// 		if (shouldSetZIndex) {
+	// 			$(element).css("z-index", 100);
+	// 		} else {
+	// 			$(element).css("z-index", 1);
+	// 		}
+
+	// 		$(element).css("opacity", calculatedOpacity);
+	// 	}
+
+
+
+	// 	$(window).scroll(function () {
+	// 		var scrollTop = $(this).scrollTop();
+	// 		var scrollBottom = $(document).height() - $(window).height();
+
+	// 		for (var page = 1; page <= numberOfPages; page++) {
+	// 			var pageId = "#content-block-" + page;
+	// 			// console.log('pageId', pageId)
+	// 			opacityFromTopDistance(pageId, scrollTop, scrollBottom, (page - 1) * baseScrollHeight, page * baseScrollHeight, 0.1, 0.9);
+	// 		}
+
+	// 		var elementsThatShouldAppearImmediatly = [
+	// 			{ name: '#content-block-1', 	index: 1	},
+	// 			{ name: '#content-block-4', 	index: 4	},
+	// 			{ name: '#content-block-6', 	index: 6	},
+	// 			{ name: '#content-block-9', 	index: 9	},
+	// 			{ name: '#content-block-11', 	index: 11	},
+	// 			{ name: '#content-block-13', 	index: 13	},
+	// 		];
+
+	// 		for (var element in elementsThatShouldAppearImmediatly) {
+	// 			opacityFromTopDistance(
+	// 				element.name, 
+	// 				scrollTop, 
+	// 				scrollBottom, 
+	// 				(element.index - 1) * baseScrollHeight, 
+	// 				element.index * baseScrollHeight, 
+	// 				0, 
+	// 				0.85
+	// 			);
+	// 		}
+
+	// 		opacityFromTopDistance(
+	// 			'#content-block-1', 
+	// 				scrollTop, 
+	// 				scrollBottom, 
+	// 				0, 
+	// 				baseScrollHeight, 
+	// 				0, 
+	// 				0.85
+	// 		);
+	// 	});
+
+	// });
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 400 && $(this).scrollTop() < 3000) {

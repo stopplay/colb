@@ -8,7 +8,7 @@ textarea {
 
 .block-content {
 	display: block;
-	position: fixed;
+	position: static;
 	width: 100%;
 	height: 100%;
 }
@@ -49,7 +49,7 @@ body {
 /* table: 
 =============================================*/
 .fixed_headers {
-	position: fixed; 
+	position: static; 
 	top: 0;
 	height: 50%;
 	width: 100%;
@@ -87,21 +87,6 @@ td {
 
 /*Menu --------------------------------------- */
 
-.menu {
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: rgba(255, 255, 255, 1);
-    position: fixed;
-    z-index: -1;
-    transition: all 400ms ease-in-out;
-}
-
 iframe {
 	border: none;
 	width: 100%;
@@ -125,18 +110,6 @@ iframe {
     opacity: 1;
 }
 
-.menues{
-	text-align: center;
-	min-width: 100%; 
-	position: fixed;
-    padding: 0;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.menues li {
-    list-style-type: none;
-}
 
 .menu ul li:hover {
     background: #fff;
@@ -157,7 +130,7 @@ iframe {
 .nav-icon {
     right: 0;
     margin: 30px 30px;
-    position: fixed;
+    position: static;
     z-index: 100000;
     width: 50px;
     height: 15px;
@@ -256,12 +229,6 @@ span {
 	height: 50px;
 }
 
-.logo {
-	top: 0;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-}
 
 .search:hover {
 	background: rgb(20,20,20);
@@ -275,7 +242,7 @@ span {
 	background-color: white;
 	color: rgb(25, 25, 25);
 	width: 400px;
-	position: fixed;
+	position: static;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -301,21 +268,10 @@ span {
 	margin: -1em;
 }
 
-video  {
-	z-index: -2;
-	margin: 0;
-  	position: fixed;
-	min-height: 100%;
-	min-width: 100%; 
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-}
-
 .code {
 	font-size: 30em;
 	margin: 0 0 0 -0.05em;
-	position: fixed;
+	position: static;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) rotate(-90deg);
@@ -325,18 +281,14 @@ video  {
 .popouse {
 	text-align: center;
 	margin: 0;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, -50%);
+	align-self: center;
 }
 .doors {
 	color: white;
 	line-height: initial;
 	text-align: center;
 	margin: 22px 0;
-	position: fixed;
+	position: static;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -346,22 +298,13 @@ video  {
 
 .doors2 {
     top: 0;
-    position: fixed;
+    position: static;
     height: 100%;
     width: 100%;
 	background: white;
 	color: rgb(20, 20, 20);
 }
-.doors .popouse {
-	color: white;
-	text-align: center;
-	margin: 0;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 1000px;
-	transform: translate(-50%, -50%);
-}
+
 
 .doors li {
     position: relative;
@@ -385,24 +328,18 @@ li:hover + img {
 	opacity: 1;
 }
 
-.content {
-	line-height: 120%;
-	position: fixed;
-	top: 0%;
-	width: 100%;
-	height: 100%;
-}
-
 .content .bodycopy {
 	z-index: 1;
 }
 
+.contablack {
+	cursor: pointer;
+	width: auto;
+	height: 0.65em;
+	margin-top: -6em;
+}
+
 .content img {
-	cursor: pointer;.contablack {
-		width: auto;
-		height: 0.65em;
-		margin-top: -6em;
-	}
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -411,10 +348,8 @@ li:hover + img {
 
 .content h1 {
 	position: relative;
-	z-index: 8;
 	line-height: 105%;
 	font-weight: 100;
-	margin: 0 0	0.5em -100px;
 }
 
 .content h2 {
@@ -475,10 +410,6 @@ li:hover + img {
 
 body {
 	font-size: 19px;
-	}
-
-.content h1 {
-margin-left: 0;		
 	}
 
 /*animazioni
