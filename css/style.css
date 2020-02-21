@@ -408,16 +408,14 @@ span {
     background: rgb(20, 20, 20);
 }
 
-.logo2 {
-    width: 5.75em;
-    margin: -1em;
-}
-
 video {
     margin: 0;
     padding: 0;
-    position: relative;
-    min-height: 100%;
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .code {
@@ -615,10 +613,18 @@ li:hover+img {
 }
 
 .center-on-parent {
-    position: absolute;
-	display: flex;
-	justify-content: center;
-	align-content: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.logo2 {
+    align-self: center;
 }
 
 .full-screen {

@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css2/style.css" />
 	<link rel="stylesheet" type="text/css" href="css2/responsive-table.css" />
+	<link rel="stylesheet" type="text/css" href="css2/scrollable-text.css" />
 	
 	<!-- <link rel="stylesheet" type="text/css" href="css/pageable.min.css" /> -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -31,6 +32,7 @@
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 
@@ -52,7 +54,7 @@
 		</div> -->
 
 		<!-- PAGE 1 start -->
-		<div class="section fp-section active logo black content-page" data-anchor="page 1" id="content-block-1">
+		<div class="section logo black content-page" data-anchor="page 1" id="content-block-1">
 			<div class="popouse">
 				Blockchain technology and cryptocurrencies<br>
 				will revolutionize the world economy.
@@ -71,7 +73,7 @@
 		</div>
 
 
-		<div class="content three section content-page" data-anchor="page 3" id="content-block-3">
+		<div class="content three fp-scrollable section content-page" data-anchor="page 3" id="content-block-3">
 			<div class="bodycopy">
 				<h1>Welcome to Colb</h1>
 
@@ -113,7 +115,7 @@
 			</div>
 		</div>
 
-		<div class="content three section content-page" data-anchor="page 5" id="content-block-5">
+		<div class="content fp-scrollable  three section content-page" data-anchor="page 5" id="content-block-5">
 			<div class="bodycopy">
 				<h1>Blockchain</h1>
 				<div class="scrollable-text">
@@ -173,7 +175,7 @@
 			</div>
 		</div>
 
-		<div class="content three section content-page" data-anchor="page 8" id="content-block-8">
+		<div class="fp-scrollable content three section content-page" data-anchor="page 8" id="content-block-8">
 
 			<!-- <div class="architecture">
 				<div class="centered-text">Stage 1, <i>Venture Rising</i></div>
@@ -187,36 +189,91 @@
 				<div class="centered-text">Stage 3, <i>Oversight</i></div>
 			</div> -->
 
-			<div class="scrollable-text padding-top-20">
+			<div class="scrollable-text">
 				<table class="table">
 					<thead>
 						<tr>
-							<th>Regulatory</th>
-							<th>Financial</th>
-							<th>M&C</th>
-							<th>Technology</th>
+							<th>Stages/Pillars</th>
+							<th>
+								<i>Venture Rising</i>
+							</th>
+							<th>
+								<i>Capital Raising</i>
+							</th>
+							<th>
+								<i>Oversight</i>
+							</th>
+							
+							
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="table-row-header">
 							<td class="padding-0">
-								<div class="centered-text">Stage 1, <i>Venture Rising</i></div>
+								<div class="centered-text">Stages</div>
 							</td>
 						</tr>
 						<tr>
-							<td data-label="Regulatory">
+							<th class="responsive">Regulatory</th>
+							<td data-label="1, Venture Rising">
 								<p>Business structure</p>
 								<p>Legal certainity</p>
 								<p>Regulatorie bodies interaction</p>
 								<p>Tax planning</p>
 							</td>
-							<td data-label="Financial">
+
+							<td data-label="2, Capital Raising">
+								<p>Regulatory Advice</p>
+								<p>Due diligence</p>
+							</td>
+
+							<td data-label="3, Oversight">
+								<p>Regulatory diagnostic</p>
+								<p>Set of rules, controls, polities, and resolutions put in place to dictate corporate
+									behavior such as AML/FT and tax compliance policy</p>
+								<p>Governance policies</p>
+							</td>
+
+						</tr>
+
+						<tr class="table-row-header">
+							<td class="padding-0">
+								<div class="centered-text">Stages</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th class="responsive">Financial</th>
+
+							<td data-label="1, Venture Rising">
 								<p>Costs analysis</p>
 								<p>Key performance indicators</p>
 								<p>Financial projections</p>
 								<p>Valutation</p>
 							</td>
-							<td data-label="M&C">
+
+							<td data-label="2, Capital Raising">
+								<p>Fundraising strategy</p>
+								<p>Equity, token or coint pricing</p>
+								<p>Underwriting</p>
+								<p>Investor's KYC and sustainability politicy</p>
+								<p>Roadshow</p>
+							</td>
+
+							<td data-label="3, Oversight">
+								<p>Business KYC and sustainability policy strategy</p>
+							</td>
+						</tr>
+						<tr class="table-row-header">
+							<td class="padding-0">
+								<div class="centered-text">Stages</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="responsive">M&C</th>
+
+
+							<td data-label="1, Venture Rising">
 								<p>Company goals</p>
 								<p>Market descriptions</p>
 								<p>Customer segments</p>
@@ -225,60 +282,40 @@
 								<p>Business image & credibility, halo effect</p>
 								<p>Communication regulation standarts</p>
 							</td>
-							<td data-label="Technology">
-								<p> Definitechnologytion</p>
-							</td>
-						</tr>
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stage 2, <i>Capital Raising</i></div>
-							</td>
-						</tr>
-						<tr>
-							<td data-label="Regulatory">
-								<p>Regulatory Advice</p>
-								<p>Due diligence</p>
-							</td>
-							<td data-label="Financial">
-								<p>Fundraising strategy</p>
-								<p>Equity, token or coint pricing</p>
-								<p>Underwriting</p>
-								<p>Investor's KYC and sustainability politicy</p>
-								<p>Roadshow</p>
-							</td>
-							<td data-label="M&C">
+
+							<td data-label="2, Capital Raising">
 								<p>Fundraising vehuicle analysis, & coordination</p>
 								<p>Investor segments</p>
 								<p>Communication materials & whitepapers</p>
 								<p>Communication regulation proof</p>
 								<p>Roadshow coordination</p>
 							</td>
-							<td data-label="Technology">
+
+							<td data-label="3, Oversight">
+								<p>Responsability: peer-to-peer communication improvements</p>
+							</td>
+
+						</tr>
+						<tr class="table-row-header">
+							<td class="padding-0">
+								<div class="centered-text">Stages</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="responsive">Technology</th>
+
+							<td data-label="1, Venture Rising">
+								<p> Definitechnologytion</p>
+							</td>
+
+							<td data-label="2, Capital Raising">
 								<p>Protocol DLT, blockchain, forks, token or coin design & creation</p>
 								<p>Asset tokenisazion</p>
 								<p>Tokenomics & yellow papaers</p>
 								<p>Smart contracts</p>
 							</td>
-						</tr>
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stage 3, <i>Oversight</i></div>
-							</td>
-						</tr>
-						<tr>
-							<td data-label="Regulatory">
-								<p>Regulatory diagnostic</p>
-								<p>Set of rules, controls, polities, and resolutions put in place to dictate corporate
-									behavior such as AML/FT and tax compliance policy</p>
-								<p>Governance policies</p>
-							</td>
-							<td data-label="Financial">
-								<p>Business KYC and sustainability policy strategy</p>
-							</td>
-							<td data-label="M&C">
-								<p>Responsability: peer-to-peer communication improvements</p>
-							</td>
-							<td data-label="Technology">
+
+							<td data-label="3, Oversight">
 								<p>Trasparency: shared distributed leadgers</p>
 								<p>Accountability: irriversability of records</p>
 							</td>
@@ -296,7 +333,7 @@
 			</video>
 		</div>
 
-		<div class="content three section content-page" data-anchor="page 10" id="content-block-10">
+		<div class="content three section content-page fp-scrollable " data-anchor="page 10" id="content-block-10">
 			<div class="bodycopy">
 				<div class="scrollable-text">
 					<h1>Colb’s view on the market</h1>
@@ -340,10 +377,10 @@
 			</div>
 		</div>
 
-		<div class="content three section content-page" data-anchor="page 12" id="content-block-12">
-			<div class="bodycopy">
+		<div class="content three section content-page fp-scrollable" data-anchor="page 12" id="content-block-12">
+			<div class="bodycopy scrollable-text">
 				<h1>People</h1>
-				<div class="box scrollable-text">
+				<div class="box">
 					<div class="bio">
 						<h3>CEO,<br>Client Principal</h3>
 						<p>
@@ -475,230 +512,10 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#main-container').fullpage({
-			css3: true
+			css3: true,
+			scrollOverflow:true
 		});
-		// $('#fullpage').fullpage({
-		// 	//options here
-		// 	// css3:false,
-		// 	autoScrolling:true,
-		// 	controlArrows: true,
-		// 	scrollHorizontally: true,
-		// });
-
-		//methods
-		// $.fn.fullpage.setAllowScrolling(false);
 	});
-
-	// $(window).ready(function() {
-	// 	// var page = new Pageable("#main-container", {
-	// 	// 	freeScroll: true,
-	// 	// 	animation: 600,
-	// 	// 	swipeThreshold: 10, // swipe / mouse drag distance (px) before firing the page change event
-
-	// 	// 	onStart: function() {
-	// 	// 		console.log('onStart', arguments)
-	// 	// 		// do something when scrolling begins
-	// 	// 	},
-	// 	// 	onScroll: function() {
-	// 	// 		console.log('onScroll', arguments)
-	// 	// 		// do something during scroll
-	// 	// 	},
-	// 	// 	onFinish: function() {
-	// 	// 		console.log('onFinish', arguments)
-	// 	// 		// do something when scrolling ends
-	// 	// 	},
-	// 	// });
-	// 	console.log($('.content-page').length);
-	// 	$('.scene-viewer').html($('.content-page').first().clone());
-
-	// 	var lastIdSet = '';
-	// 	$(window).scroll(function() {
-	// 		var contentPageScroll = $(this).scrollTop();
-	// 		// console.log('contentPageScroll', contentPageScroll);
-	// 		var hadScrolled = false;
-	// 		$('.content-page').each(function(index, contentPage) {
-	// 			var pageOffset = $(contentPage).offset();
-	// 			var pageHeight = $(contentPage).height();
-	// 			var totalHeight = pageHeight + pageOffset.top;
-
-	// 			if (contentPageScroll >= pageOffset.top && contentPageScroll <= (pageOffset.top + pageHeight) ) {
-	// 				console.log('pageOffset', pageOffset);
-	// 				console.log('pageHeight', pageHeight);
-	// 				var percentageOfScrollOnPage = (contentPageScroll - pageOffset.top) / (totalHeight - pageOffset.top);
-	// 				// $(contentPage).css('position', 'fixed');
-	// 				var currentPageId = $(contentPage).attr('id');
-	// 				console.log('page', currentPageId, ':', percentageOfScrollOnPage);
-
-	// 				if (lastIdSet !== currentPageId) {
-	// 					$('.scene-viewer').html($(contentPage).clone());
-	// 					lastIdSet = currentPageId;
-	// 				}
-
-	// 				// has scroll?
-	// 				var hasScroll = $(contentPage).height() > $(window).height();
-
-	// 				console.log('hasScroll', hasScroll);
-
-	// 				if (hasScroll) {
-	// 					var scrollInPixels = Math.ceil($(contentPage).height() * percentageOfScrollOnPage);
-	// 					console.log('scrollInPixels', scrollInPixels);
-	// 					$('.scene-viewer').scrollTop(scrollInPixels);
-	// 				}
-
-	// 				if (contentPageScroll + $(window).height() >= pageOffset.top && !hadScrolled) {
-						
-
-	// 					// console.log('scrollTo', totalHeight);
-	// 					// $([document.documentElement, document.body]).animate({
-	// 					// 	scrollTop: totalHeight
-	// 					// }, 1000);
-	// 				}
-	// 			}
-	// 		});
-	// 	});
-	// })
-
-	// $.fn.scrollGuard = function () {
-	// 	return this
-	// 		.on('wheel', function (e) {
-	// 			var $this = $(this);
-	// 			// console.log('e', e);
-	// 			// console.log('$this.scrollTop()', $this.scrollTop());
-	// 			// console.log('$this.innerHeight()', $this.innerHeight());
-	// 			// console.log('$this[0].scrollHeight', $this[0].scrollHeight);
-	// 			// console.log('$this.parent().scrollTop()', $this.parent().scrollTop());
-	// 			// console.log('$(window).scrollTop()', $(window).scrollTop());
-
-	// 			if (e.originalEvent.deltaY < 0) {
-	// 				/* scrolling up */
-	// 				return ($this.scrollTop() > 0) || ($this.scrollTop() === 0 && $(window).scrollTop() > 0 && $(window).scrollTop() > $(window).height());
-	// 			} else {
-	// 				/* scrolling down */
-	// 				return ($this.scrollTop() + $this.innerHeight() < $this[0].scrollHeight) || (($this.scrollTop() + 1 + $this.innerHeight()) >= $this[0].scrollHeight);
-	// 			}
-	// 		});
-	// };
-
-
-	// function clamp(current, min, max) {
-	// 	return Math.max(min, Math.min(current, max));
-	// }
-
-	// $(window).ready(function () {
-	// 	// console.log('length', $('.content-page').length);
-	// 	$('.content-page').scrollGuard();
-
-	// 	var baseScrollHeight = 100;
-	// 	var numberOfPages = $('.content-page').length;
-
-	// 	$("#main-container").height(numberOfPages * baseScrollHeight);
-
-
-	// 	for (var contentBlockNumber = 2; contentBlockNumber <= numberOfPages; contentBlockNumber++) {
-	// 		const contentBlockId = '#content-block-'.concat('' + contentBlockNumber);
-	// 		console.log('contentBlockId', contentBlockId);
-	// 		// $(contentBlockId).hide();
-	// 		$(contentBlockId).css("opacity", 0);
-	// 	}
-
-	// 	$('.search').hide();
-
-	// 	function opacityFromTopDistance(element, current, maxScroll, start, end, threshold1, threshold2) {
-	// 		var currentPercentage = current / maxScroll;
-
-	// 		// console.log('maxScroll', maxScroll);
-	// 		// console.log('current percentage', currentPercentage)
-	// 		var baseMaxScroll = 2762; // change here to the final
-	// 		var percentualDeviation = maxScroll / baseMaxScroll;
-
-	// 		// console.log('percentualDeviation', percentualDeviation);
-
-	// 		// start = percentualDeviation * start;
-	// 		// end = percentualDeviation * end;
-
-	// 		// var start = startPercentage * maxScroll;
-	// 		// var end = endPercentage * maxScroll;
-
-	// 		threshold2 = threshold2 || threshold1;
-	// 		var endEaseIn = start + (end - start) * threshold1;
-	// 		var startEaseOut = start + (end - start) * threshold2;
-
-	// 		var calculatedOpacity = 0;
-	// 		var shouldSetZIndex = false;
-
-	// 		if (current >= start && current < endEaseIn) {
-	// 			calculatedOpacity = (current - start) / (endEaseIn - start);
-	// 			shouldSetZIndex = true;
-	// 		} else if (current >= startEaseOut && current <= end) {
-	// 			calculatedOpacity = 1 - (current - startEaseOut) / (end - startEaseOut);
-	// 			shouldSetZIndex = true;
-	// 		} else if (current >= endEaseIn && current < startEaseOut) {
-	// 			calculatedOpacity = 1;
-	// 			shouldSetZIndex = true;
-	// 		} else {
-	// 			calculatedOpacity = 0;
-	// 			shouldSetZIndex = false;
-	// 		}
-
-	// 		if (current >= start && current <= end) {
-	// 			console.log('current:', element);
-	// 			console.log('opacity:', calculatedOpacity);
-	// 		}
-
-	// 		if (shouldSetZIndex) {
-	// 			$(element).css("z-index", 100);
-	// 		} else {
-	// 			$(element).css("z-index", 1);
-	// 		}
-
-	// 		$(element).css("opacity", calculatedOpacity);
-	// 	}
-
-
-
-	// 	$(window).scroll(function () {
-	// 		var scrollTop = $(this).scrollTop();
-	// 		var scrollBottom = $(document).height() - $(window).height();
-
-	// 		for (var page = 1; page <= numberOfPages; page++) {
-	// 			var pageId = "#content-block-" + page;
-	// 			// console.log('pageId', pageId)
-	// 			opacityFromTopDistance(pageId, scrollTop, scrollBottom, (page - 1) * baseScrollHeight, page * baseScrollHeight, 0.1, 0.9);
-	// 		}
-
-	// 		var elementsThatShouldAppearImmediatly = [
-	// 			{ name: '#content-block-1', 	index: 1	},
-	// 			{ name: '#content-block-4', 	index: 4	},
-	// 			{ name: '#content-block-6', 	index: 6	},
-	// 			{ name: '#content-block-9', 	index: 9	},
-	// 			{ name: '#content-block-11', 	index: 11	},
-	// 			{ name: '#content-block-13', 	index: 13	},
-	// 		];
-
-	// 		for (var element in elementsThatShouldAppearImmediatly) {
-	// 			opacityFromTopDistance(
-	// 				element.name, 
-	// 				scrollTop, 
-	// 				scrollBottom, 
-	// 				(element.index - 1) * baseScrollHeight, 
-	// 				element.index * baseScrollHeight, 
-	// 				0, 
-	// 				0.85
-	// 			);
-	// 		}
-
-	// 		opacityFromTopDistance(
-	// 			'#content-block-1', 
-	// 				scrollTop, 
-	// 				scrollBottom, 
-	// 				0, 
-	// 				baseScrollHeight, 
-	// 				0, 
-	// 				0.85
-	// 		);
-	// 	});
-
-	// });
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 400 && $(this).scrollTop() < 3000) {

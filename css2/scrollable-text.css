@@ -1,5 +1,6 @@
 .scrollable-text {
     /* overflow-y: auto; */
+    height: 100vh;
 }
 
 /* .content::-webkit-scrollbar {
@@ -26,3 +27,4 @@
     clear: both;
     display: table;
 }
+
