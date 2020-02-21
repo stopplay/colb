@@ -130,7 +130,7 @@ iframe {
 .nav-icon {
     right: 0;
     margin: 30px 30px;
-    position: static;
+    position: fixed;
     z-index: 100000;
     width: 50px;
     height: 15px;

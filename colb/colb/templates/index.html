@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="/static/css2/style.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css2/responsive-table.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css2/scrollable-text.css" />
-	
+	<link rel="stylesheet" type="text/css" href="/static/css/menu.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/pageable.min.css" /> -->
 	<script src="/static/js/modernizr-2.6.2.min.js"></script>
 	<style>
@@ -40,13 +40,24 @@
 </head>
 
 <body>
-	<!-- <div class="menu">
-		<iframe src="menu.html"></iframe>
-	</div>
+    
+    <div class="mark-menu">
+        <div style="background-color: #ffdf00;" class="full-screen menu">
+            <div class="menues" >
+                <li>Welcome to Colb</li>
+                <li>Blockchain</li>
+                <li>Project architecture</li>
+                <li>Colb and the marketplace</li>
+                <li>People</li>
+                <li>Contacts</li>
+            </div>
+        </div>
+    </div>
+    
 	<div class="nav-icon">
 		<span></span>
 		<span></span>
-	</div> -->
+	</div>
 	<div id="main-container" class="container" >
 
 		<!-- <div class="scene-viewer">
@@ -528,7 +539,7 @@
 	$(document).ready(function () {
 		$('.nav-icon').click(function () {
 			$(this).toggleClass('open');
-			$('body').toggleClass('show-menu');
+            $('.mark-menu').toggleClass('show-menu');
 		});
 	});
 </script>
