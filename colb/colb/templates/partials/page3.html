@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="section content three content-page fp-scrollable" data-anchor="page 8" id="content-block-8">
+<div class="active section content three content-page fp-scrollable" data-anchor="page 8" id="content-block-8">
 
     <div class="header-container-fixed">
         <div class="header-container-flex">
@@ -166,20 +166,21 @@
         
         console.log('totalHeight', totalHeight);
         console.log('currentScrollTop', currentScrollTop);
-        console.log('$(window).height()', $(window).height());
-        console.log('currentScrollTop >= totalHeight - individualScrollHeight', totalHeight - individualScrollHeight);
+        console.log('$(this).innerHeight()', $(this).innerHeight());
+        console.log('Math.ceil($(this).innerHeight())', Math.ceil($(this).innerHeight()));
+        console.log('$(this)[0].scrollHeight', $(this)[0].scrollHeight);
         
         opacityFromTopDistance("#table-header-to-appear-1", currentScrollTop, 0, individualScrollHeight - decreaseFromHeight, 0, 0.9);
         opacityFromTopDistance("#table-header-to-appear-2", currentScrollTop, individualScrollHeight - decreaseFromHeight, individualScrollHeight * 2 - decreaseFromHeight, 0.1, 0.9);
         opacityFromTopDistance("#table-header-to-appear-3", currentScrollTop, individualScrollHeight * 2 - decreaseFromHeight, individualScrollHeight * 3, 0.1, 1);
 
-        if (currentScrollTop + $(this).innerHeight() < $(this)[0].scrollHeight && currentScrollTop > 0) {
+        if (currentScrollTop + Math.ceil($(this).innerHeight()) < $(this)[0].scrollHeight && currentScrollTop > 0) {
             $.fn.fullpage.setAllowScrolling(false);
         } else if (currentScrollTop === 0) {
             $.fn.fullpage.setAllowScrolling(true);
         }
 
-        if (currentScrollTop + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+        if (currentScrollTop + Math.ceil($(this).innerHeight()) >= $(this)[0].scrollHeight) {
             // $.fn.fullpage.setAllowScrolling(true);
             $.fn.fullpage.moveTo(9, 0);
             $.fn.fullpage.setAllowScrolling(true);
