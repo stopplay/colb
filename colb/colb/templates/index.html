@@ -16,7 +16,7 @@
 	<link rel="shortcut icon" href="graphics/ico/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="graphics/ico/apple-touch-icon-114x114-precomposed.png">
 	<link rel="icon" href="graphics/ico/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="/static/css/fullpage.css" />
+	{% comment %} <link rel="stylesheet" type="text/css" href="/static/css/fullpage.css" /> {% endcomment %}
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css2/style.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css2/responsive-table.css" />
@@ -31,10 +31,13 @@
 	<link rel="stylesheet" type="text/css" href="/static/css/jquery.fullPage.css" />
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	{% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> {% endcomment %}
 
 	<script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
 
 	<script type="text/javascript" src="/static/js/jquery.fullPage.min.js"></script>
+
+	<script type="text/javascript" src="/static/js/opacity-control.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/static/css/fade-effect.css" />
 </head>
@@ -83,463 +86,12 @@
 		<span></span>
 	</div>
 	<div id="main-container" class="container" >
-
-		<!-- <div class="scene-viewer">
-
-		</div> -->
-
-		<!-- PAGE 1 start -->
-		<div class="section logo black content-page" data-anchor="page 1" id="content-block-1">
-			<div class="popouse">
-				Blockchain technology and cryptocurrencies<br>
-				will revolutionize the world economy.
-			</div>
-		</div>
-
-		<div data-anchor="page 2" id="content-block-2" class="section logo black content-page">
-			<video autoplay muted loop>
-				<source src="/static/video/video.mp4" type="video/mp4">
-			</video>
-
-			<div class="center-on-parent">
-				<img class="logo2" src="/static/img/Colb_Logo_White.png" width="170" alt="logo" />
-				<span>Blockchain Experts </span>
-			</div>
-		</div>
-
-
-		<div class="content three fp-scrollable section content-page" data-anchor="page 3" id="content-block-3">
-			<div class="bodycopy">
-				<h1>Welcome to Colb</h1>
-
-				<div class="scrollable-text">
-					We are blockchain experts with a solid foundation in law.
-					Our clients include existing ventures, start-ups, established companies, institutions, and fintechs.
-					Colb’s specialists understand the complex blockchain environment for the global arena and employ a
-					young, compelling technology to build strategic solutions. This is accomplished by combining onboard
-					knowledge of regulatory, financial, marketing/communication and IT disciplines.
-					Each client is unique, thus every solution is individually crafted, custom-tailored, and
-					made-to-measure. Colb clients gain access to exceptional resources, team wisdom, partnerships, a
-					network
-					of professionals and sources of funding.
-					In close collaboration with our clients and partners, we set-up global businesses designed for
-					impact
-					and to perform at the highest levels. We aim to build long-term relationships that yield sustainable
-					and
-					scalable results.
-					Efficient problem-solving is the primary goal.
-					By providing knowledge and counsel with commitment and passion, Colb responsibly supports its
-					clients
-					along their entrepreneurial journey.
-				</div>
-			</div>
-		</div>
-
-
-		<!-- PAGE 2 start -->
-
-		<div class="logo black section content-page" data-anchor="page 4" id="content-block-4">
-			<div class="popouse">
-				<div class="bodycopy white">
-					&quot;It is not the strongest of the species that survives,<br>
-					nor the most intelligent that survives.<br>
-					It is the one that is most adaptable to change.&quot;<br>
-					<span class="autor">Darwin </span>
-					<br><br>
-				</div>
-			</div>
-		</div>
-
-		<div class="content fp-scrollable  three section content-page" data-anchor="page 5" id="content-block-5">
-			<div class="bodycopy">
-				<h1>Blockchain</h1>
-				<div class="scrollable-text">
-					We believe that it is the responsibility of modern society to guarantee the greatest number of
-					people
-					abundance and comfort. Blockchain emerges as a positive alternative in an era of income
-					concentration,
-					the debate over the merits of growth, and the need for new methods to transform the monopolistic
-					hold on
-					global wealth.
-
-					Blockchain has the power to offer innovative mechanisms to a greater number of participants. With
-					blockchain, users can rely on a safe and transparent network which better addresses the problem of
-					fallible intermediaries. Within the blockchain, individuals can exercise control over their own
-					money
-					and track every transaction with the confidence that each is validated algorithmically.
-
-					The blockchain's utility has the potential to extend beyond the realm of finance. It can ensure
-					greater
-					confidence in the production chain. The process of commodities and assets tokenization* will
-					<ul>
-						<li>improve food source certification </li>
-						<li>streamline distribution networks </li>
-						<li>add leverage to the possibilities of investment<br> and fractional ownership </li>
-					</ul>
-
-					*The World Economic Forum estimates that by 2030 tokenization of assets may represent 10% of world
-					GDP.
-
-					For more information about tokenization, see Section 3, Colb’s Blockchain Landscape
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-			</div>
-		</div>
-
-		<!-- PAGE 3 start -->
-		<div class="logo black section content-page" data-anchor="page 6" id="content-block-6">
-			<div class="popouse">
-				<div class="bodycopy white"><br><br>
-					&quot;Colb has given us the critical tools necessary to support our business model, strategies which
-					help us to uphold our mission. It enables Conta Black to offer a more equal and inclusive financial
-					market for everyone, especially those left out of the system: <i>the unbankings</i>.&quot; <span
-						class="autor">Sergio All / CEO, Founder </span>
-					<img class="contablack" src="/static/img/contablack2.svg" alt="contablack" />
-				</div>
-			</div>
-		</div>
-
-		<div class="doors2 section content-page" data-anchor="page 7" id="content-block-7">
-			<div class="popouse">
-				We conceptualize, plan and create tailor-made solutions.<br>
-				Each stage in every project is informed by Colb’s proprietary<br>
-				4 Pillars methodology.
-			</div>
-		</div>
-
-		<div class="fp-scrollable content three section content-page" data-anchor="page 8" id="content-block-8">
-
-			<!-- <div class="architecture">
-				<div class="centered-text">Stage 1, <i>Venture Rising</i></div>
-			</div>
-
-			<div class="architecture">
-				<div class="centered-text">Stage 2, <i>Capital Raising</i></div>
-			</div>
-
-			<div class="architecture">
-				<div class="centered-text">Stage 3, <i>Oversight</i></div>
-			</div> -->
-
-			<div class="scrollable-text">
-				<table class="table">
-					<thead>
-						<tr>
-							<th>Stages/Pillars</th>
-							<th>
-								<i>Venture Rising</i>
-							</th>
-							<th>
-								<i>Capital Raising</i>
-							</th>
-							<th>
-								<i>Oversight</i>
-							</th>
-							
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stages</div>
-							</td>
-						</tr>
-						<tr>
-							<th class="responsive">Regulatory</th>
-							<td data-label="1, Venture Rising">
-								<p>Business structure</p>
-								<p>Legal certainity</p>
-								<p>Regulatorie bodies interaction</p>
-								<p>Tax planning</p>
-							</td>
-
-							<td data-label="2, Capital Raising">
-								<p>Regulatory Advice</p>
-								<p>Due diligence</p>
-							</td>
-
-							<td data-label="3, Oversight">
-								<p>Regulatory diagnostic</p>
-								<p>Set of rules, controls, polities, and resolutions put in place to dictate corporate
-									behavior such as AML/FT and tax compliance policy</p>
-								<p>Governance policies</p>
-							</td>
-
-						</tr>
-
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stages</div>
-							</td>
-						</tr>
-
-						<tr>
-							<th class="responsive">Financial</th>
-
-							<td data-label="1, Venture Rising">
-								<p>Costs analysis</p>
-								<p>Key performance indicators</p>
-								<p>Financial projections</p>
-								<p>Valutation</p>
-							</td>
-
-							<td data-label="2, Capital Raising">
-								<p>Fundraising strategy</p>
-								<p>Equity, token or coint pricing</p>
-								<p>Underwriting</p>
-								<p>Investor's KYC and sustainability politicy</p>
-								<p>Roadshow</p>
-							</td>
-
-							<td data-label="3, Oversight">
-								<p>Business KYC and sustainability policy strategy</p>
-							</td>
-						</tr>
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stages</div>
-							</td>
-						</tr>
-						<tr>
-							<th class="responsive">M&C</th>
-
-
-							<td data-label="1, Venture Rising">
-								<p>Company goals</p>
-								<p>Market descriptions</p>
-								<p>Customer segments</p>
-								<p>Competitive advantage</p>
-								<p>Marketing plan</p>
-								<p>Business image & credibility, halo effect</p>
-								<p>Communication regulation standarts</p>
-							</td>
-
-							<td data-label="2, Capital Raising">
-								<p>Fundraising vehuicle analysis, & coordination</p>
-								<p>Investor segments</p>
-								<p>Communication materials & whitepapers</p>
-								<p>Communication regulation proof</p>
-								<p>Roadshow coordination</p>
-							</td>
-
-							<td data-label="3, Oversight">
-								<p>Responsability: peer-to-peer communication improvements</p>
-							</td>
-
-						</tr>
-						<tr class="table-row-header">
-							<td class="padding-0">
-								<div class="centered-text">Stages</div>
-							</td>
-						</tr>
-						<tr>
-							<th class="responsive">Technology</th>
-
-							<td data-label="1, Venture Rising">
-								<p> Definitechnologytion</p>
-							</td>
-
-							<td data-label="2, Capital Raising">
-								<p>Protocol DLT, blockchain, forks, token or coin design & creation</p>
-								<p>Asset tokenisazion</p>
-								<p>Tokenomics & yellow papaers</p>
-								<p>Smart contracts</p>
-							</td>
-
-							<td data-label="3, Oversight">
-								<p>Trasparency: shared distributed leadgers</p>
-								<p>Accountability: irriversability of records</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-
-
-		<!-- PAGE 4 start -->
-		<div class="logo black section content-page" data-anchor="page 9" id="content-block-9">
-			<video autoplay muted loop>
-				<source src="/static/video/video9.mp4" type="video/mp4">
-			</video>
-		</div>
-
-		<div class="content three section content-page fp-scrollable " data-anchor="page 10" id="content-block-10">
-			<div class="bodycopy">
-				<div class="scrollable-text">
-					<h1>Colb’s view on the market</h1>
-					We live in an era of profound change. And change is all about adaptation. The blockchain concept carries
-					great promise because the technology which supports cryptocurrency can revolutionize the world economy.
-					Our desire is to play an active part in this new imperative.
-					<br><br><br>
-					<h1>Market strategy</h1>
-					We’re part of a new market, only ten years old. Look at the blockchain’s potential: cryptocurrencies
-					alone have already averaged more profitable growth than other categories of investment. Diverse areas of
-					economics relative to the blockchain remain to be implemented, among them the inclusion of technology to
-					define the origin of products in the production chain, including asset and commodity tokenization.
-					<p>Ventures which demonstrate solid fundamentals and outstanding possibilities are today actively
-						entering the market. However, there is still space for the category to better establish itself. This
-						represents our opportunity to play a serious role in blockchain’s evolution.
-					</p><br>
-					<h1>Plan to reach the market</h1>
-					Four relevant factors justify our market thesis:
-					<ul>
-						<li><i>new ventures</i>: many viable businesses for us to assist; </li>
-						<li><i>profound challenges</i>: new territories in which we can create; </li>
-						<li><i>growing knowledge base</i>: opportunities for us<br> to broaden our wisdom; </li>
-						<li><i>areas to implement with our expertise</i>: spaces<br> where Colb can grow. </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!-- PAGE 5 start -->
-		<div class="logo black section content-page" data-anchor="page 11" id="content-block-11">
-			<div class="popouse">
-				<div class="bodycopy white"><br>
-					&quot;The Colb team has unique expertise not usually encountered in the market nowadays the
-					combination of blockchain, crypto, and legal understanding. I initially attempted to work with big
-					law firms in order to find what I ultimately discovered it at Colb. I am gratified and secure at
-					having this team with us for Monnos’ journey from the outset. With Colb I am sure that we are
-					prepared for whatever our ambitions require.&quot; <span class="autor">Rodrigo Soeiro Ubaldo / CEO,
-						Co Founder</span>
-					<img class="monnos" src="/static/img/monnos-1.svg" alt="monnos" />
-				</div>
-			</div>
-		</div>
-
-		<div class="content three section content-page fp-scrollable" data-anchor="page 12" id="content-block-12">
-			<div class="bodycopy scrollable-text">
-				<h1>People</h1>
-				<div class="box">
-					<div class="bio">
-						<h3>CEO,<br>Client Principal</h3>
-						<p>
-							<strong>Yulgan</strong> interprets and connects clients to Colb’s team and partners,
-							applying a
-							deep understanding of strategy and actions, and how they relate to the appropriate business
-							channels. A lawyer and author of three legal books, he holds a master of law specializing in
-							human rights and the prevention of international corruption from the Universidade Federal da
-							Paraíba.
-						</p>
-					</div>
-					<div class="bio">
-						<h3>Project Principal,<br> M&C Expert</h3>
-						<p>
-							<strong>Caina</strong> leads the partners and teams through client projects with a
-							passionate
-							entrepreneurial spirit. She understands the complexities of roles, capabilities and the
-							critical
-							economics of time management. Caina’s skills enable her to safely and sustainably navigate
-							the
-							complex paths of idea communication. She helps Colb’s clients to consistently and
-							effectively
-							persuade and compete for audiences in the marketplace. Caina’s background includes 15 years
-							of
-							professional experience, over a decade of it in Project Management with a Swiss Private
-							Bank.
-							She holds a bachelor’s degree in Business Administration from the Haute école de gestion
-							Fribourg, Switzerland.
-						</p>
-					</div>
-					<div class="bio">
-						<h3><br>Regulatory Expert</h3>
-						<p>
-							<strong>Yure</strong>’s intuition and creativity help him to design safe and sustainable
-							business solutions by ensuring conformity with the correct legislation. He holds both a
-							bachelor's degree in law from the Universidade Federal da Paraíba and a specialization in
-							public
-							law, corporate and tax law from the Universidade Cândido Mendes.
-						</p>
-					</div>
-					<div class="bio">
-						<h3><br>Regulatory Expert</h3>
-						<p>
-							<strong>Ylana</strong>’s skills enable her to safely and sustainably navigate the complex
-							paths
-							of regulatory solutions by ensuring conformity with the correct legislation. Her background
-							includes a bachelor's degree in law from the Universidade Federal da Paraíba and a banking
-							law
-							certificate from Saint Paul Business School.
-						</p>
-					</div>
-					<div class="bio">
-						<h3><br>Technological Expert </h3>
-						<p>
-							<strong>Rodrigo</strong> possesses the talent and experience to design safe and sustainable
-							forks, blockchain coins and tokens. He holds a bachelor's degree in mechanical engineering
-							from
-							the Polytechnic School of the University of São Paulo.
-						</p>
-					</div>
-					<div class="bio">
-						<h3><br>Practitioner </h3>
-						<p>
-							<strong>Adriano</strong> currently studies for an MBA in digital transformation and the
-							future
-							of business at the Pontifícia Universidade Católica do Rio Grande do Sul. He completed a
-							bachelor's degree in law from the Universidade Presbiteriana Mackenzie of São Paulo. </p>
-					</div>
-					<div class="bio">
-						<h3><br>Practitioner </h3>
-						<p>
-							<strong>Caio</strong>’s masters degree in economic law from the Federal University of
-							Paraíba
-							focused on regulatory compliance for financial markets and specialization in foreign
-							commerce,
-							maritime and port law at the University Maurício de Nassau. </p>
-					</div>
-					<div class="bio">
-						<h3><br>Practitioner </h3>
-						<p>
-							<strong>Renato</strong> is completing the master’s degree program in international and
-							European
-							law at Faculdade de Direito da Universidade Nova de Lisboa, Portugal. His specialization
-							courses
-							at The Hague Academy of International Law and International Law Center (CEDIN) covered
-							international public law.
-						</p>
-					</div>
-					<div class="bio">
-						<h3><br>Intern </h3>
-						<p>
-							<strong>Lucas</strong> studies business at the Universidade Presbiteriana Mackenzie of São
-							Paulo.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- PAGE 6 start -->
-		<div class="logo black section content-page" data-anchor="page 13" id="content-block-13">
-			<video autoplay muted loop>
-				<source src="/static/video/video8.mp4" type="video/mp4">
-			</video>
-		</div>
-
-		<div class="content three section content-page" data-anchor="page 14" id="content-block-14">
-			<div class="contacts">
-				<ul>
-					<li>Colb—</li>
-					<li>Blockchain Experts</li>
-				</ul>
-				<ul>
-					<li>Rua Cayowaá 1071, cj. 25,</li>
-					<li>Postcode 05018-010, Perdizes,</li>
-					<li>São Paulo, SP, Brazil</li>
-				</ul>
-				<ul>
-					<li>hi@colb.global</li>
-				</ul>
-			</div>
-		</div>
-
-
+		{% include 'partials/page1.html' %}
+		{% include 'partials/page2.html' %}
+		{% include 'partials/page3.html' %}
+		{% include 'partials/page4.html' %}
+		{% include 'partials/page5.html' %}
+		{% include 'partials/page6.html' %}
 	</div>
 	
 </body>
@@ -548,7 +100,25 @@
 	$(document).ready(function() {
 		$('#main-container').fullpage({
 			css3: true,
-			scrollOverflow:true
+			scrollOverflow:true,
+			// onLeave: function(index, nextIndex, direction){
+			// 	console.log('onLeave', arguments);
+			// },
+			// afterLoad: function(anchorLink, index){
+			// 	console.log('afterLoad', arguments);
+			// },
+			// afterRender: function(){
+			// 	console.log('afterRender', arguments);
+			// },
+			// afterResize: function(){
+			// 	console.log('afterResize', arguments);
+			// },
+			// afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+			// 	console.log('afterSlideLoad', arguments);
+			// },
+			// onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+			// 	console.log('onSlideLeave', arguments);
+			// }
 		});
 	});
 

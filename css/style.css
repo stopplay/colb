@@ -107,9 +107,9 @@ li {
 
 /* table: 
 =============================================*/
-.fixed_headers {
-    position: relative;
-    top: 0;
+.fixed_headers thead th {
+    position: sticky;
+    top: 0%;
     width: 100%;
     background-color: white;
 }

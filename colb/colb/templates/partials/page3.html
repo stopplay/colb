@@ -1,0 +1,217 @@
+<!-- PAGE 3 start -->
+<div class="logo black section content-page" data-anchor="page 6" id="content-block-6">
+    <div class="popouse">
+        <div class="bodycopy white"><br><br>
+            &quot;Colb has given us the critical tools necessary to support our business model, strategies which
+            help us to uphold our mission. It enables Conta Black to offer a more equal and inclusive financial
+            market for everyone, especially those left out of the system: <i>the unbankings</i>.&quot; <span
+                class="autor">Sergio All / CEO, Founder </span>
+            <img class="contablack" src="/static/img/contablack2.svg" alt="contablack" />
+        </div>
+    </div>
+</div>
+
+<div class="doors2 section content-page" data-anchor="page 7" id="content-block-7">
+    <div class="popouse">
+        We conceptualize, plan and create tailor-made solutions.<br>
+        Each stage in every project is informed by Colb’s proprietary<br>
+        4 Pillars methodology.
+    </div>
+</div>
+
+<div class="section content three content-page fp-scrollable" data-anchor="page 8" id="content-block-8">
+
+    <div class="header-container-fixed">
+        <div class="header-container-flex">
+            <h2 id="table-header-to-appear-1">Stage 1, <i>Venture Rising</i></h2>
+            <h2 id="table-header-to-appear-2">Stage 2, <i>Capital Raising</i></h2>
+            <h2 id="table-header-to-appear-3">Stage 3, <i>Oversight</i></h2>
+        </div>
+    </div>
+
+    <div class="table-container-fixed">
+        <table class="table fixed-headers">
+            <thead>
+                <tr>
+                    <th>Regulatory</th>
+                    <th>Financial</th>
+                    <th>M&C</th>
+                    <th>Technology</th>
+                </tr>
+            </thead>
+        </table>
+
+        <table class="table moving-body fp-scrollable">
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Business structure</li>
+                            <li>Legal certainity</li>
+                            <li>Regulatorie bodies interaction</li>
+                            <li>Tax planning</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Costs analysis</li>
+                            <li>Key performance indicators</li>
+                            <li>Financial projections</li>
+                            <li>Valutation</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Company goals</li>
+                            <li>Market descriptions</li>
+                            <li>Customer segments</li>
+                            <li>Competitive advantage</li>
+                            <li>Marketing plan</li>
+                            <li>Business image & credibility, halo effect</li>
+                            <li>Communication regulation standarts</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definitechnologytion</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Regulatory Advice</li>
+                            <li>Due diligence</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Fundraising strategy</li>
+                            <li>Equity, token or coint pricing</li>
+                            <li>Underwriting</li>
+                            <li>Investor's KYC and sustainability politicy</li>
+                            <li>Roadshow</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Fundraising vehuicle analysis, & coordination</li>
+                            <li>Investor segments</li>
+                            <li>Communication materials & whitepapers</li>
+                            <li>Communication regulation proof</li>
+                            <li>Roadshow coordination</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Protocol DLT, blockchain, forks, token or coin design & creation</li>
+                            <li>Asset tokenisazion</li>
+                            <li>Tokenomics & yellow papaers</li>
+                            <li>Smart contracts</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Regulatory diagnostic</li>
+                            <li>Set of rules, controls, polities, and resolutions put in place to dictate corporate
+                                behavior such as AML/FT and tax compliance policy</li>
+                            <li>Governance policies</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Business KYC and sustainability policy strategy</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Responsability: peer-to-peer communication improvements</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Trasparency: shared distributed leadgers</li>
+                            <li>Accountability: irriversability of records</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    opacityFromTopDistance("#table-header-to-appear-1", 0, 0, 100, 0, 0.95);
+    opacityFromTopDistance("#table-header-to-appear-2", 0, 100, 200, 0, 0.95);
+    opacityFromTopDistance("#table-header-to-appear-3", 0, 200, 300, 0, 0.95);
+
+    var isMoved = false;
+    
+    $('.table-container-fixed').scroll(function() {
+
+        var currentScrollTop = $(this).scrollTop();
+        var totalHeight = 0;
+        
+        $(this).children().each(function() {
+            totalHeight = totalHeight + $(this).outerHeight(true);
+        });
+
+        
+        var individualScrollHeight = totalHeight / 3.0;
+        var decreaseFromHeight = individualScrollHeight / 2;
+        
+        console.log('totalHeight', totalHeight);
+        console.log('currentScrollTop', currentScrollTop);
+        console.log('$(window).height()', $(window).height());
+        console.log('currentScrollTop >= totalHeight - individualScrollHeight', totalHeight - individualScrollHeight);
+        
+        opacityFromTopDistance("#table-header-to-appear-1", currentScrollTop, 0, individualScrollHeight - decreaseFromHeight, 0, 0.9);
+        opacityFromTopDistance("#table-header-to-appear-2", currentScrollTop, individualScrollHeight - decreaseFromHeight, individualScrollHeight * 2 - decreaseFromHeight, 0.1, 0.9);
+        opacityFromTopDistance("#table-header-to-appear-3", currentScrollTop, individualScrollHeight * 2 - decreaseFromHeight, individualScrollHeight * 3, 0.1, 1);
+
+        if (currentScrollTop + $(this).innerHeight() < $(this)[0].scrollHeight && currentScrollTop > 0) {
+            $.fn.fullpage.setAllowScrolling(false);
+        } else if (currentScrollTop === 0) {
+            $.fn.fullpage.setAllowScrolling(true);
+        }
+
+        if (currentScrollTop + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            // $.fn.fullpage.setAllowScrolling(true);
+            $.fn.fullpage.moveTo(9, 0);
+            $.fn.fullpage.setAllowScrolling(true);
+            // if (!isMoved) {
+            //     isMoved = true;
+            // }
+        } else if (currentScrollTop <= 0) {
+            // $.fn.fullpage.setAllowScrolling(true);
+        } else {
+            // $.fn.fullpage.setAllowScrolling(false);
+        }
+    })
+
+    $(document).ready(function() {
+        $('#content-block-9').bind('mousewheel', function(e){
+            if(e.originalEvent.wheelDelta / 120 > 0) {
+                $.fn.fullpage.moveTo(8, 0);
+                $.fn.fullpage.setAllowScrolling(false);
+                isMoved = false;
+            }
+            else{
+                console.log('scrolling down !');
+            }
+        });
+
+        $('#content-block-8').bind('mousewheel', function(e){
+            if(e.originalEvent.wheelDelta / 120 > 0) {
+
+            }
+            else{
+                console.log('scrolling down !');
+            }
+        });
+    })
+</script>

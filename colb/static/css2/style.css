@@ -46,27 +46,6 @@ body {
 	color: white;
 }
 
-/* table: 
-=============================================*/
-.fixed_headers {
-	position: static; 
-	top: 0;
-	height: 50%;
-	width: 100%;
-	background-color: white;
-}
-
-table {
-	color:black;
-	width: 1600px;
-	text-align: left;
-	margin: auto;
-}
-
-.fixed_headers table {
-	height: 100%;
-	border-bottom: 1px solid black;
-}
 
 th {
 	vertical-align: bottom;
