@@ -1,0 +1,292 @@
+<div class="header-container-fixed">
+  <div class="header-container-flex">
+    <h2 id="table-header-to-appear-1">Stage 1, Venture Rising</h2>
+    <h2 id="table-header-to-appear-2">Stage 2, Capital Raising</h2>
+    <h2 id="table-header-to-appear-3">Stage 3, Oversight</h2>
+  </div>
+</div>
+
+<div class="table-container-fixed fp-scrollable">
+  <table class="table fixed-headers">
+    <thead>
+      <tr>
+        <th class="clickable-table selected-tab" id="regulatory">
+          Regulatory
+        </th>
+        <th class="clickable-table" id="financial">Financial</th>
+        <th class="clickable-table" id="mc">M&C</th>
+        <th class="clickable-table" id="technology">Technology</th>
+      </tr>
+    </thead>
+  </table>
+
+  <table class="table moving-body fp-scrollable">
+    <tbody>
+      <tr>
+        <td class="table-value regulatory-values">
+          <ul>
+            <li><p>Business structure</p></li>
+            <li><p>Legal certainity</p></li>
+            <li><p>Bodies interaction</p></li>
+            <li><p>Tax planning</p></li>
+          </ul>
+        </td>
+        <td class="table-value financial-values">
+          <ul>
+            <li><p>Costs analysis</p></li>
+            <li><p>Key performance indicators</p></li>
+            <li><p>Financial projections</p></li>
+            <li><p>Valutation</p></li>
+          </ul>
+        </td>
+        <td class="table-value mc-values">
+          <ul>
+            <li><p>Company goals</p></li>
+            <li><p>Market descriptions</p></li>
+            <li><p>Customer segments</p></li>
+            <li><p>Competitive advantage</p></li>
+            <li><p>Marketing plan</p></li>
+            <li><p>Business image & credibility, halo effect</p></li>
+            <li><p>Communication regulation standarts</p></li>
+          </ul>
+        </td>
+        <td class="table-value technology-values">
+          <ul>
+            <li><p>Definition</p></li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table-value regulatory-values">
+          <ul>
+            <li><p>Advice</p></li>
+            <li><p>Due diligence</p></li>
+          </ul>
+        </td>
+        <td class="table-value financial-values">
+          <ul>
+            <li><p>Strategy</p></li>
+            <li><p>Equity, token or coin pricing</p></li>
+            <li><p>Underwriting</p></li>
+            <li><p>Investor's KYC and sustainability policy</p></li>
+            <li><p>Roadshow</p></li>
+          </ul>
+        </td>
+        <td class="table-value mc-values">
+          <ul>
+            <li><p>Vehicle analysis, & coordination</p></li>
+            <li><p>Investor segments communication</p></li>
+            <li><p>Communication materials & whitepapers</p></li>
+            <li><p>Communication regulation proof</p></li>
+            <li><p>Roadshow coordination</p></li>
+          </ul>
+        </td>
+        <td class="table-value technology-values">
+          <ul>
+            <li>
+              <p>
+                Protocol DLT, blockchain, forks, token or coin design & creation
+              </p>
+            </li>
+            <li><p>Asset tokenisazion</p></li>
+            <li><p>Tokenomics & yellow papers</p></li>
+            <li><p>Smart contract</p></li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table-value regulatory-values">
+          <ul>
+            <li><p>Diagnostic</p></li>
+            <li><p>Rules, controls, polities, and resolutions</p></li>
+            <li><p>AML/FT and Tax compliance policy</p></li>
+            <li><p>Governance policies</p></li>
+          </ul>
+        </td>
+        <td class="table-value financial-values">
+          <ul>
+            <li><p>Business KYC and sustainability policy strategy</p></li>
+          </ul>
+        </td>
+        <td class="table-value mc-values">
+          <ul>
+            <li>
+              <p>Responsability: peer-to-peer communication improvements</p>
+            </li>
+          </ul>
+        </td>
+        <td class="table-value technology-values">
+          <ul>
+            <li><p>Trasparency: shared distributed leadgers</p></li>
+            <li><p>Accountability: irriversability of records</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script>
+  opacityFromTopDistance('#table-header-to-appear-1', 0, 0, 100, 0, 0.95);
+  opacityFromTopDistance('#table-header-to-appear-2', 0, 100, 200, 0, 0.95);
+  opacityFromTopDistance('#table-header-to-appear-3', 0, 200, 300, 0, 0.95);
+
+  const tableValueElements = document.querySelectorAll('.table-value');
+  const theadElements = document.querySelectorAll('.clickable-table');
+
+  const handleActiveItem = elementId => {
+    theadElements.forEach(element => {
+      if (element.getAttribute('id') !== elementId) {
+        element.removeAttribute('class', 'selected-tab');
+      }
+    });
+    tableValueElements.forEach(element => {
+      if (
+        element
+          .getAttribute('class')
+          .split(' ')
+          .includes(`${elementId}-values`)
+      ) {
+        element.setAttribute('style', 'opacity: 1;');
+      } else {
+        element.setAttribute('style', 'opacity: 0;');
+        element.setAttribute('style', 'display: none;');
+      }
+    });
+  };
+
+  const onSelect = element => {
+    let mediaWindow = window.matchMedia('(max-width: 650px)');
+    if (mediaWindow.matches) {
+      element.setAttribute('class', 'selected-tab');
+      handleActiveItem(element.getAttribute('id'));
+    }
+  };
+
+  theadElements.forEach(element => {
+    element.addEventListener('click', () => onSelect(element));
+  });
+
+  const regulatoryElements = document.querySelectorAll('.regulatory-values');
+  regulatoryElements.forEach(element => {
+    element.setAttribute('style', 'opacity: 1;');
+  });
+
+  function handleClickHeaders(mediaWindow) {
+    if (!mediaWindow.matches) {
+      tableValueElements.forEach(element => {
+        element.setAttribute('style', 'opacity: 1;');
+      });
+    }
+  }
+
+  let mediaWindow = window.matchMedia('(max-width: 650px)');
+  mediaWindow.addListener(handleClickHeaders);
+
+  var isMoved = false;
+
+  $('.table-container-fixed').scroll(function() {
+    var currentScrollTop = $(this).scrollTop();
+    var totalHeight = 0;
+
+    $(this)
+      .children()
+      .each(function() {
+        totalHeight = totalHeight + $(this).outerHeight(true);
+      });
+
+    var individualScrollHeight = totalHeight / 3.0;
+    var decreaseFromHeight = individualScrollHeight / 2;
+
+    // console.log('totalHeight', totalHeight);
+    // console.log('currentScrollTop', currentScrollTop);
+    // console.log('$(this).innerHeight()', $(this).innerHeight());
+    // console.log(
+    //   'Math.ceil($(this).innerHeight())',
+    //   Math.ceil($(this).innerHeight())
+    // );
+    // console.log('$(this)[0].scrollHeight', $(this)[0].scrollHeight);
+
+    opacityFromTopDistance(
+      '#table-header-to-appear-1',
+      currentScrollTop,
+      0,
+      individualScrollHeight - decreaseFromHeight,
+      0,
+      0.9
+    );
+    opacityFromTopDistance(
+      '#table-header-to-appear-2',
+      currentScrollTop,
+      individualScrollHeight - decreaseFromHeight,
+      individualScrollHeight * 2 - decreaseFromHeight,
+      0.1,
+      0.9
+    );
+    opacityFromTopDistance(
+      '#table-header-to-appear-3',
+      currentScrollTop,
+      individualScrollHeight * 2 - decreaseFromHeight,
+      individualScrollHeight * 3,
+      0.1,
+      1
+    );
+
+    if (
+      currentScrollTop + Math.ceil($(this).innerHeight()) <
+        $(this)[0].scrollHeight &&
+      currentScrollTop > 0
+    ) {
+      $.fn.fullpage.setAllowScrolling(false);
+    } else if (currentScrollTop === 0) {
+      $.fn.fullpage.setAllowScrolling(true);
+    }
+
+    if (
+      currentScrollTop + Math.ceil($(this).innerHeight()) >=
+      $(this)[0].scrollHeight
+    ) {
+      // $.fn.fullpage.setAllowScrolling(true);
+      $.fn.fullpage.moveTo(9, 0);
+      $.fn.fullpage.setAllowScrolling(true);
+      // if (!isMoved) {
+      //     isMoved = true;
+      // }
+    } else if (currentScrollTop <= 0) {
+      // $.fn.fullpage.setAllowScrolling(true);
+    } else {
+      // $.fn.fullpage.setAllowScrolling(false);
+    }
+  });
+
+  $(document).ready(function() {
+    $('#content-block-9').bind('mousewheel', function(e) {
+      if (e.originalEvent.wheelDelta / 120 > 0) {
+        $.fn.fullpage.moveTo(8, 0);
+        $.fn.fullpage.setAllowScrolling(false);
+        isMoved = false;
+      } else {
+        console.log('scrolling down !');
+      }
+    });
+
+    $('#content-block-8').bind('mousewheel', function(e) {
+      if (e.originalEvent.wheelDelta / 120 > 0) {
+        console.log('scrolling down Func 2!');
+        isMoved = false;
+      } else {
+        // $.fn.fullpage.moveTo(9, 0);
+        console.log('scrolling down !');
+      }
+    });
+    $('.header-container-flex').bind('mousewheel', function(e) {
+      if (e.originalEvent.wheelDelta / 120 > 0) {
+        $.fn.fullpage.moveTo(7, 0);
+      } else {
+        $.fn.fullpage.moveTo(9, 0);
+        console.log('scrolling down !');
+      }
+    });
+  });
+</script>

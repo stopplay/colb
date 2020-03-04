@@ -26,7 +26,7 @@ SECRET_KEY = 'ez(q5i&6+_c9u^-ej7)4gm0$#o*q__g_@v56&v4rxb69$#ka5o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.173.183.103', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['54.173.183.103', '127.0.0.1', 'localhost', "www.colb.global", "colb.global"]
 
 
 # Application definition
