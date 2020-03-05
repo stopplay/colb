@@ -70,7 +70,6 @@
 
 .table tbody {
   overflow-y: scroll;
-  word-break: break-word;
 }
 
 .table thead {
@@ -86,6 +85,7 @@
   font-size: 0.75em;
   line-height: 18px;
   margin-right: unset !important;
+  word-break: break-word;
 }
 
 .table tbody td ul {
