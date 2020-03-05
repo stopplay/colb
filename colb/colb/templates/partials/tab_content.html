@@ -1,0 +1,131 @@
+<div class="tab-container">
+  <div class="bar-container">
+    <a
+      class="bar-button"
+      id="stage_one_button"
+      onclick="openStage('stage_one')"
+      style="text-decoration: underline; text-decoration-color: #ffdf00;"
+      >Stage 1</a
+    >
+    <a class="bar-button" id="stage_two_button" onclick="openStage('stage_two')"
+      >Stage 2</a
+    >
+    <a
+      class="bar-button"
+      id="stage_three_button"
+      onclick="openStage('stage_three')"
+      >Stage 3</a
+    >
+  </div>
+  <div id="stage_one" class="stage">
+    <h2 class="tab-title">Venture Rising</h2>
+    <h2 class="section-title">Regulatory</h2>
+    <ul>
+      <li style="display: flex; flex-direction: row;">
+        <p>Business structure</p>
+      </li>
+      <li><p>Legal certainity</p></li>
+      <li><p>Bodies interaction</p></li>
+      <li><p>Tax planning</p></li>
+    </ul>
+    <h2 class="section-title">Financial</h2>
+    <ul>
+      <li><p>Costs analysis</p></li>
+      <li><p>Key performance indicators</p></li>
+      <li><p>Financial projections</p></li>
+      <li><p>Valutation</p></li>
+    </ul>
+    <h2 class="section-title">M&C</h2>
+    <ul>
+      <li><p>Company goals</p></li>
+      <li><p>Market descriptions</p></li>
+      <li><p>Customer segments</p></li>
+      <li><p>Competitive advantage</p></li>
+      <li><p>Marketing plan</p></li>
+      <li><p>Business image & credibility, halo effect</p></li>
+      <li><p>Communication regulation standarts</p></li>
+    </ul>
+    <h2 class="section-title">Technology</h2>
+    <ul>
+      <li><p>Definition</p></li>
+    </ul>
+  </div>
+
+  <div id="stage_two" class="stage" style="display:none">
+    <h2 class="tab-title">Capital Rising</h2>
+    <h2 class="section-title">Regulatory</h2>
+    <ul>
+      <li><p>Advice</p></li>
+      <li><p>Due diligence</p></li>
+    </ul>
+    <h2 class="section-title">Financial</h2>
+    <ul>
+      <li><p>Strategy</p></li>
+      <li><p>Equity, token or coin pricing</p></li>
+      <li><p>Underwriting</p></li>
+      <li><p>Investor's KYC and sustainability policy</p></li>
+      <li><p>Roadshow</p></li>
+    </ul>
+    <h2 class="section-title">M&C</h2>
+    <ul>
+      <li><p>Vehicle analysis, & coordination</p></li>
+      <li><p>Investor segments communication</p></li>
+      <li><p>Communication materials & whitepapers</p></li>
+      <li><p>Communication regulation proof</p></li>
+      <li><p>Roadshow coordination</p></li>
+    </ul>
+    <h2 class="section-title">Technology</h2>
+    <ul>
+      <li>
+        <p>
+          Protocol DLT, blockchain, forks, token or coin design & creation
+        </p>
+      </li>
+      <li><p>Asset tokenisazion</p></li>
+      <li><p>Tokenomics & yellow papers</p></li>
+      <li><p>Smart contract</p></li>
+    </ul>
+  </div>
+
+  <div id="stage_three" class="stage" style="display:none">
+    <h2 class="tab-title">Oversight</h2>
+    <h2 class="section-title">Regulatory</h2>
+    <ul>
+      <li><p>Diagnostic</p></li>
+      <li><p>Rules, controls, polities, and resolutions</p></li>
+      <li><p>AML/FT and Tax compliance policy</p></li>
+      <li><p>Governance policies</p></li>
+    </ul>
+    <h2 class="section-title">Financial</h2>
+    <ul>
+      <li><p>Business KYC and sustainability policy strategy</p></li>
+    </ul>
+    <h2 class="section-title">M&C</h2>
+    <ul>
+      <li><p>Responsability: peer-to-peer communication improvements</p></li>
+    </ul>
+    <h2 class="section-title">Technology</h2>
+    <ul>
+      <li><p>Trasparency: shared distributed leadgers</p></li>
+      <li><p>Accountability: irriversability of records</p></li>
+    </ul>
+  </div>
+</div>
+<script>
+  function openStage(stageId) {
+    const stageElements = document.querySelectorAll('.stage');
+    stageElements.forEach(stage => {
+      stage.style.display = 'none';
+    });
+    document.querySelector(`#${stageId}`).style.display = 'block';
+    const barButtonElements = document.querySelectorAll('.bar-button');
+    barButtonElements.forEach(button => {
+      if (button.getAttribute('id') === `${stageId}_button`) {
+        button.style.textDecoration = 'underline';
+        button.style.textDecorationColor = '#ffdf00';
+      } else {
+        button.style.textDecoration = 'none';
+      }
+    });
+  }
+</script>

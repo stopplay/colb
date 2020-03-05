@@ -30,7 +30,6 @@ body {
 .monnos {
     width: auto;
     height: 0.85em;
-    margin-right: 1.5em;
 }
 
 .contablack {
@@ -76,11 +75,8 @@ li {
 .bio {
     display: flex;
     flex-direction: column;
-    overflow: inherit;
-    width: 350px;
     padding: 10px;
     margin-bottom: 1em;
-    float: left;
 
 }
 
@@ -184,9 +180,9 @@ td {
 }
 
 td li {
-    margin-left: -40px;
+    margin-left: -20px;
     margin-right: 40px;
-    list-style-type: "—";
+    list-style-type: none;
 }
 
 /*Menu --------------------------------------- */
