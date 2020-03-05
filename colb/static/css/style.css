@@ -678,6 +678,7 @@ li:hover + img {
 .tab-container {
   color: black;
   margin: 30px;
+  word-break: break-word;
 }
 
 .bar-container {
@@ -705,6 +706,15 @@ li:hover + img {
 
 .centered-content {
   display: flex;
+}
+
+.centered-phrase-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -776,12 +786,5 @@ li:hover + img {
 @media (max-width: 996px) {
   .text-start-middle h1 {
     left: 0px;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  video { 
-      width: 400%;
-      left: -135%;
   }
 }
