@@ -81,7 +81,10 @@
 
   <body>
     <div class="mark-menu">
-      <div style="background-color: #ffdf00; display: flex; justify-content: center;" class="full-screen menu">
+      <div
+        style="background-color: #ffdf00; display: flex; justify-content: center;"
+        class="full-screen menu"
+      >
         <div class="menues">
           <li>
             <a href="#" onclick="navigate(3)" class="menu-item-clicable font-size-control">
@@ -122,12 +125,9 @@
       <span></span>
     </div>
     <div id="main-container" class="container">
-			{% include 'partials/page1.html' %}
-			{% include 'partials/page2.html' %}
-			{% include 'partials/page3.html' %}
-			{% include 'partials/page4.html' %}
-			{% include 'partials/page5.html' %}
-			{% include 'partials/page6.html' %}
+      {% include 'partials/page1.html' %} {% include 'partials/page2.html' %} {%
+      include 'partials/page3.html' %} {% include 'partials/page4.html' %} {%
+      include 'partials/page5.html' %} {% include 'partials/page6.html' %}
     </div>
   </body>
 
@@ -182,6 +182,5 @@
     function navigate(page) {
       $.fn.fullpage.moveTo(page, 0);
     }
-
   </script>
 </html>
