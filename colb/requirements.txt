@@ -6,7 +6,7 @@ async-timeout==3.0.1
 attrs==19.1.0
 autobahn==19.9.2
 Automat==0.7.0
-Babel==2.6.0
+Babel==2.9.1
 billiard==3.6.0.0
 blessings==1.6.1
 bpython==0.17
